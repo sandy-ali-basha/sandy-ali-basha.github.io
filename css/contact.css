@@ -1,0 +1,25 @@
+.contact {
+  height: 70vh;
+  margin: 5vh 2vw;
+  border-radius: 20px;
+}
+
+.blur {
+  height: 70vh;
+  margin: 5vh 2vw;
+  border-radius: 20px;
+  position: relative;
+  z-index: -1;
+  background: #99ccff;
+}
+
+.contact__content {
+  position: relative;
+  top: -70vh;
+  margin: 5vh 2vw;
+}
+
+.LI-profile-badge-div {
+  margin-left: 1.5vw !important;
+}
+/*# sourceMappingURL=contact.css.map */

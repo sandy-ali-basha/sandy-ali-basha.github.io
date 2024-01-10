@@ -1,0 +1,8 @@
+@import "./fonts", "breakpoints.scss", "_colors.scss", "_design.scss",
+  "_animation.scss", "./cursor";
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

@@ -1,0 +1,148 @@
+.cursor {
+  position: fixed;
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  z-index: 1;
+  transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  z-index: 9999999999;
+  transform: scale(1);
+  // display: none;
+  @include media("<=tablet") {
+    display: none;
+  }
+  &.active {
+    opacity: 1;
+    transform: scale(0);
+  }
+  &.scale {
+    opacity: 1;
+    transform: scale(0);
+  }
+  &.menu-active {
+    opacity: 1;
+    transform: scale(0);
+  }
+
+  &.hovered {
+    opacity: 1;
+  }
+}
+
+.cursor-follower {
+  // display: none;
+
+  @include media("<=tablet") {
+    display: none;
+  }
+  position: fixed;
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  z-index: 1;
+  transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
+    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(2px, 2px);
+  &.active {
+    opacity: 1;
+    transform: scale(3);
+  }
+  &.scale {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  &.menu-active {
+    opacity: 1;
+    transform: scale(3);
+    background-color: rgb(0, 0, 0);
+    mix-blend-mode: lighten;
+    opacity: 50%;
+  }
+  &.hovered {
+    opacity: 1;
+  }
+  &.icon {
+    transform: scale(3);
+    opacity: 1;
+  }
+}
+
+.heyIcon {
+  &::before {
+    background-size: 80px;
+    display: inline-block;
+    width: 80px;
+    z-index: 8888888;
+    height: 80px;
+    content: "👋";
+    position: relative;
+    top: -20px;
+    font-size: 3rem;
+    left: -20px;
+  }
+}
+.mySkillsIcon {
+  &::before {
+    background-image: url(../img/cursor.gif);
+    background-size: 200px;
+    display: inline-block;
+    width: 200px;
+    z-index: -1;
+    height: 200px;
+    content: "";
+    position: relative;
+    top: -100px;
+    font-size: 3rem;
+    left: -100px;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+  }
+}
+.experIcon {
+  &::before {
+    background-image: url(../img/experience.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 400px;
+    z-index: -1;
+    height: 400px;
+    content: "";
+    position: relative;
+    top: -150px;
+    font-size: 3rem;
+    left: -150px;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+  }
+}
+.border {
+  border: none;
+}
+.emailIcon {
+  &::before {
+    background-image: url(../img/emailGif.gif);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    z-index: -1;
+    height: 200px;
+    content: "";
+    position: relative;
+    top: -100px;
+    font-size: 3rem;
+    left: -100px;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+  }
+}

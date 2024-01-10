@@ -1,0 +1,1387 @@
+@import "_variable.scss";
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+$i: 10;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hammersmith One", sans-serif;
+  // cursor: none;
+  transition: all 0.5s;
+}
+$boxShadow: 0.7px 0.9px 8.1px rgba(0, 0, 0, 0.023),
+  1.8px 2.2px 12.2px rgba(0, 0, 0, 0.034), 3.3px 4px 16.2px rgba(0, 0, 0, 0.041),
+  5.1px 6.2px 20.8px rgba(0, 0, 0, 0.049),
+  7.6px 9.3px 26.6px rgba(0, 0, 0, 0.056),
+  11.2px 13.6px 34.9px rgba(0, 0, 0, 0.067), 19px 23px 54px rgba(0, 0, 0, 0.09);
+$dropShadow: drop-shadow(0.7px 0.9px 8.1px rgba(44, 44, 44, 0.023))
+  drop-shadow(1.8px 2.2px 12.2px rgba(44, 44, 44, 0.034))
+  drop-shadow(3.3px 4px 16.2px rgba(44, 44, 44, 0.041))
+  drop-shadow(5.1px 6.2px 20.8px rgba(44, 44, 44, 0.049))
+  drop-shadow(7.6px 9.3px 26.6px rgba(44, 44, 44, 0.056))
+  drop-shadow(11.2px 13.6px 34.9px rgba(44, 44, 44, 0.067))
+  drop-shadow(19px 23px 54px rgba(44, 44, 44, 0.09));
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+  background: radial-gradient(
+      circle at 49% 51%,
+      rgb(75, 122, 253),
+      rgba(114, 151, 250, 0) 50%
+    ),
+    radial-gradient(
+      circle at 10% 10%,
+      rgb(74, 199, 199),
+      rgba(153, 255, 255, 0) 50%
+    ),
+    radial-gradient(
+      circle at 90% 10%,
+      rgb(119, 68, 221),
+      rgba(153, 102, 255, 0) 50%
+    ),
+    radial-gradient(
+      circle at 90% 90%,
+      rgb(62, 189, 189),
+      rgba(153, 255, 255, 0) 50%
+    ),
+    radial-gradient(
+      circle at 10% 90%,
+      rgb(116, 63, 223),
+      rgba(153, 102, 255, 0) 50%
+    );
+}
+::-webkit-scrollbar-track {
+  background-color: $ghost-color;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $purple-secondery;
+  border-radius: 2px;
+}
+//dark mode
+.darkMode {
+  &::-webkit-scrollbar-track {
+    background-color: $background !important;
+  }
+  header,
+  .hey,
+  .mywork,
+  .skills,
+  .experince,
+  .recentWork,
+  .sayHi {
+    background: $background;
+    color: $primary-text;
+    h1 {
+      color: $blue-secondary;
+    }
+  }
+  .header_motion {
+    svg {
+      background: transparent !important;
+    }
+  }
+  .menu {
+    a {
+      &:hover {
+        color: $blue-primary !important;
+      }
+      color: $blue-primary !important;
+    }
+  }
+  .box {
+    background: $hover !important;
+    h3 {
+      color: $primary-text !important;
+    }
+    p {
+      color: $blue-secondary !important;
+    }
+  }
+  .cursor {
+    background: $primary-text;
+  }
+  .cursor-follower {
+    border-color: $primary-text;
+    background: transparent;
+  }
+  .degrees,
+  .jobs {
+    background-color: $hover !important;
+    h5,
+    h4 {
+      color: $primary-text;
+    }
+    p {
+      color: $blue-primary !important;
+    }
+  }
+  .recentWork {
+    .work {
+      box-shadow: none !important;
+    }
+    &_list {
+      li {
+        color: white;
+      }
+    }
+  }
+  .sayHi {
+    input,
+    textarea {
+      background: $menue !important;
+      color: $primary-text !important;
+      &::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $primary-text;
+        opacity: 1; /* Firefox */
+      }
+    }
+    h3,
+    p {
+      color: $primary-text !important;
+    }
+    .btn {
+      background: $blue-secondary !important;
+      color: $background !important;
+    }
+  }
+}
+.spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 999999;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hey {
+  .hey_shape {
+    filter: $dropShadow;
+    position: absolute;
+  }
+  .shape-one {
+    width: 15vw;
+    top: 4%;
+    right: 0%;
+    position: absolute;
+    animation: animationFramesTwo 20s infinite ease-in-out reverse;
+    overflow: hidden;
+    vertical-align: middle;
+    z-index: 1;
+
+    @include media("<tablet") {
+      animation: none;
+      transition: none;
+    }
+  }
+  .shape-2 {
+    width: 17vw;
+    left: -5%;
+    top: -30%;
+    animation: animationFramesTwo 20s infinite ease reverse;
+    @include media("<tablet") {
+      animation: none;
+      transition: none;
+    }
+  }
+  .shape-3 {
+    right: 20%;
+    top: 40%;
+    width: 15vw;
+
+    animation: animationFramesTwo 10s infinite ease-in-out reverse;
+    @include media("<tablet") {
+      animation: none;
+      transition: none;
+    }
+  }
+  .shape-4 {
+    left: 5px;
+    top: 50%;
+    width: 9vw;
+
+    animation: animationFramesTwo 30s infinite ease-in-out reverse;
+    @include media("<tablet") {
+      animation: none;
+      transition: none;
+    }
+  }
+}
+@keyframes animationFramesTwo {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(0px, 100px) rotate(15deg);
+  }
+
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+header {
+  height: 120vh;
+  box-shadow: inset 0px 0px 2.7px rgba(0, 0, 0, 0.036),
+    inset 0px 0px 5.9px rgba(0, 0, 0, 0.053),
+    inset 0px 0px 10px rgba(0, 0, 0, 0.065),
+    inset 0px 0px 15px rgba(0, 0, 0, 0.075),
+    inset 0px 0px 21.7px rgba(0, 0, 0, 0.085),
+    inset 0px 0px 30.7px rgba(0, 0, 0, 0.095),
+    inset 0px 0px 43.5px rgba(0, 0, 0, 0.105),
+    inset 0px 0px 63.1px rgba(0, 0, 0, 0.117),
+    inset 0px 0px 97.3px rgba(0, 0, 0, 0.134),
+    inset 0px 0px 173px rgba(0, 0, 0, 0.17);
+  background: rgb(0 0 0 / 20%);
+  section {
+    height: 70%;
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 60px;
+      color: white;
+      position: absolute;
+      z-index: 5555;
+      width: 90%;
+      @include media("<phone") {
+        display: none;
+        .toggle {
+          display: block !important;
+        }
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .menu {
+        letter-spacing: 2px;
+        a {
+          margin-right: 10px;
+          transition: all 0.5s;
+          &:hover {
+            color: $dark_blue;
+          }
+        }
+      }
+    }
+    .title {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      position: relative;
+      .header-text {
+        margin-left: 10vw;
+        color: white;
+        font-size: 4rem;
+        font-weight: 700;
+        @include media("<phone") {
+          font-size: 2rem;
+        }
+        &::before {
+          content: url(../img/white_stripes.svg);
+          width: 11vw;
+          position: absolute;
+          left: 85px;
+        }
+        h2 {
+          @include media(">phone", "<=tablet") {
+            font-size: 3rem;
+          }
+        }
+        h6 {
+          @include media(">phone", "<=tablet") {
+            font-size: 2rem;
+          }
+        }
+        h4 {
+          @include media(">phone", "<=tablet") {
+            font-size: 2rem;
+          }
+        }
+      }
+      .header-contact-icons {
+        display: flex;
+        color: white;
+        margin-left: 10vw;
+        padding-top: 10px;
+        justify-content: space-between;
+        width: 15%;
+        a {
+          text-decoration: none;
+          color: white;
+          img {
+            cursor: pointer;
+            @include media("<tablet") {
+              margin-inline: 1rem;
+            }
+          }
+        }
+      }
+      h5 {
+        color: white;
+        margin-left: 10vw;
+        padding-top: 10px;
+      }
+      .div-animation {
+        position: absolute;
+        top: 26vh;
+        right: 5vw;
+        width: 36vw;
+
+        @include media(">phone", "<=tablet") {
+          width: 50vw !important;
+          z-index: -1;
+        }
+        @include media("<phone") {
+          position: relative;
+          width: 100vw !important;
+          top: -1vh;
+          right: 0px;
+          width: 90%;
+        }
+      }
+      .shape_1,
+      .shape_2,
+      .shape_3,
+      .shape_4,
+      .shape_5,
+      .shape_6,
+      .shape_7,
+      .shape_8,
+      .shape_9,
+      .shape_10 {
+        position: absolute;
+        z-index: -1;
+        filter: $dropShadow;
+      }
+
+      .shape_2 {
+        top: -5vh;
+        left: 30vw;
+        width: 100px;
+      }
+      .shape_3 {
+        top: 98vh;
+        left: 1vw;
+      }
+      .shape_4 {
+        top: 30vh;
+        left: 30vw;
+      }
+      .shape_5 {
+        top: 80vh;
+        left: 30vw;
+      }
+      .shape_6 {
+        top: -10vh;
+        right: 10vw;
+      }
+      .shape_7 {
+        top: 18vh;
+        right: 2vw;
+        width: 10vw;
+      }
+      .shape_8 {
+        top: 90vh;
+        left: 85vw;
+        z-index: 10;
+      }
+      .shape_9 {
+        top: 30vh;
+        right: -10vw;
+      }
+      .shape_10 {
+        top: 5vh;
+        left: -3vw;
+        z-index: 5;
+      }
+
+      .av {
+        position: absolute;
+        color: white;
+        bottom: 5%;
+        left: 4vw;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+        &::before {
+          content: "o";
+          color: white;
+        }
+      }
+      .big-stripes {
+        position: absolute;
+        width: 250px;
+        z-index: 0;
+        right: 0px;
+        bottom: 0px;
+        opacity: 0.7;
+      }
+    }
+    .hero-cube {
+      position: absolute;
+      top: 28%;
+      right: 6%;
+      transform: rotate(0deg);
+      z-index: 0;
+      transition: all 0.5s ease;
+      .hero-picture {
+        width: 50%;
+      }
+    }
+    .hero-cube-2 {
+      position: absolute;
+      top: 58%;
+      right: -10%;
+      z-index: 0;
+      .hero-picture-2 {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@mixin btnBg {
+  background-image: linear-gradient(
+    to right,
+    #9999ff 0%,
+    #bdbdfa 51%,
+    #9999ff 100%
+  );
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 50px;
+  &:hover {
+    background-position: right center;
+  }
+}
+
+.hey {
+  display: flex;
+  flex-direction: row;
+  color: $black_primary;
+  min-height: 100vh;
+  background: $ghost-color;
+  position: relative;
+  @include media("<tablet") {
+    display: flex;
+    flex-direction: column;
+  }
+  .light_blue {
+    color: $light-blue;
+    font-weight: bold;
+  }
+  .img {
+    padding: 2vw;
+    width: 50%;
+    @include media("<phone") {
+      display: flex;
+      justify-content: center;
+      align-item: center;
+      width: 100%;
+      height: 80%;
+    }
+    .strips {
+      position: relative;
+      top: -23vh;
+      width: 15vw;
+      z-index: -55;
+      left: 6vw;
+      @include media("<phone") {
+        display: none;
+      }
+    }
+    .cvImg {
+      width: 28vw;
+      position: relative;
+      top: 17vh;
+      left: -6vw;
+      z-index: 555;
+      @include media("<phone") {
+        width: 60vw;
+        top: initial;
+      }
+    }
+  }
+  .txt {
+    padding: 2vw;
+    display: flex;
+    align-items: flex-start;
+    width: 50vw;
+    flex-direction: column;
+
+    @include media("<phone") {
+      align-items: center;
+      width: 100vw;
+    }
+    h1 {
+      padding-bottom: 20px;
+      font-size: 8rem;
+      margin-top: -20vh;
+      &::before {
+        content: url(../img/stripes.svg);
+        position: relative;
+        top: 122px;
+        left: -80px;
+        /* background-color: red; */
+        z-index: -5;
+      }
+    }
+    p {
+      width: 80%;
+      font-weight: 200;
+      font-size: 1rem;
+    }
+    button {
+      width: 40%;
+      color: white;
+      border: none;
+      outline: none;
+      height: 7vh;
+      margin-top: 6vh;
+      cursor: pointer;
+      box-shadow: inset 0.2rem 0.2rem 1rem #8abdff,
+        inset -0.2rem -0.2rem 1rem #915bf5,
+        0.9px 1px 2px -5px rgba(0, 0, 0, 0.034),
+        2.3px 2.6px 3.1px -5px rgba(0, 0, 0, 0.049),
+        4.4px 5px 4.4px -5px rgba(0, 0, 0, 0.061),
+        7.6px 8.6px 6.3px -5px rgba(0, 0, 0, 0.076),
+        15px 17px 11px -5px rgba(0, 0, 0, 0.11);
+      @include btnBg();
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      @include media(">phone", "<=tablet") {
+        font-size: x-small;
+      }
+      @include media("<phone") {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+.mywork {
+  display: flex;
+  justify-content: space-evenly;
+  height: 70vh;
+  background: $ghost-color;
+  position: relative;
+  @include media("<phone") {
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  .strips {
+    position: absolute;
+    left: 20px;
+    width: 200px;
+    z-index: -1;
+  }
+  .topStrips {
+    z-index: +66;
+    left: auto;
+    right: 150px;
+    top: 300px;
+    width: 130px;
+  }
+  .project {
+    background-image: url(../img/mesh-works-small.png);
+    background-position: initial;
+    background-size: cover;
+    border-radius: 44% 56% 27% 73% / 53% 36% 64% 47%;
+    transition: all 2s ease;
+    animation: border 8s both infinite;
+    box-shadow: $boxShadow;
+    @include media("<tablet") {
+      animation: none;
+      transition: none;
+    }
+    @include center();
+    &:hover {
+      box-shadow: $boxShadow;
+      transform: translateY(-30px);
+    }
+    @keyframes border {
+      0% {
+        border-radius: 44% 56% 27% 73% / 53% 36% 64% 47%;
+      }
+      50% {
+        border-radius: 66% 34% 63% 37% / 71% 71% 29% 29%;
+      }
+      100% {
+        border-radius: 44% 56% 27% 73% / 53% 36% 64% 47%;
+      }
+    }
+    @include media(">phone", "<=tablet") {
+      width: 40vw;
+      height: 40vw;
+    }
+    @include media("<phone") {
+      width: 80vw;
+      height: 80vw;
+      margin-block: 4vh;
+    }
+    .h3 {
+      color: $black_primary;
+      padding-bottom: 20px;
+      @include media(">phone", "<=tablet") {
+        font-size: small;
+      }
+    }
+    .p {
+      width: 70%;
+      color: $black_secondary;
+      text-align: center;
+      padding-bottom: 30px;
+      @include media(">phone", "<=tablet") {
+        font-size: small;
+      }
+    }
+    .btn {
+      width: 40%;
+      height: 6vh;
+      text-align: center;
+      color: #fff;
+      border: none;
+      outline: none;
+      @include center();
+      @include btnBg();
+      flex-direction: row;
+      cursor: pointer;
+      font-size: 0.8rem;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      @include media(">phone", "<=tablet") {
+        font-size: x-small;
+      }
+      @include media("<phone") {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .cv {
+    background: white;
+    @include center();
+    border-radius: 44% 56% 27% 73% / 53% 36% 64% 47%;
+    transition: all 2s ease;
+    animation: brdr 8s both infinite;
+
+    @include media("<tablet") {
+      animation: none;
+      transition: none;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    box-shadow: $boxShadow;
+    &:hover {
+      box-shadow: $boxShadow;
+      transform: translateY(-30px);
+    }
+    @include media(">phone", "<=tablet") {
+      width: 40vw;
+      height: 40vw;
+    }
+    @include media("<phone") {
+      width: 80vw;
+      height: 80vw;
+      margin-block: 4vh;
+    }
+    @keyframes brdr {
+      0% {
+        border-radius: 40% 60% 19% 81% / 54% 25% 75% 46%;
+      }
+      50% {
+        border-radius: 60% 40% 64% 36% / 40% 59% 41% 60%;
+      }
+      100% {
+        border-radius: 40% 60% 19% 81% / 54% 25% 75% 46%;
+      }
+    }
+    .h3 {
+      color: $black_primary;
+      padding-bottom: 20px;
+      @include media(">phone", "<=tablet") {
+        font-size: small;
+      }
+    }
+    .p {
+      width: 70%;
+      color: $black_secondary;
+      text-align: center;
+      padding-bottom: 30px;
+      @include media(">phone", "<=tablet") {
+        font-size: small;
+      }
+    }
+    .btn {
+      width: 40%;
+      height: 6vh;
+      text-align: center;
+      color: #fff;
+      border: none;
+      outline: none;
+      border-radius: 50px;
+      @include center();
+      @include btnBg();
+
+      flex-direction: row;
+      cursor: pointer;
+      @include media(">phone", "<=tablet") {
+        font-size: x-small;
+      }
+      @include media("<phone") {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+.skills {
+  height: 80vh;
+  text-align: center;
+  padding: 2vh;
+  position: relative;
+
+  .skills_shape_1,
+  .skills_shape_2,
+  .skills_shape_3,
+  .skills_shape_4 {
+    position: absolute;
+    filter: $dropShadow;
+  }
+  .skills_shape_1 {
+    top: 5vh;
+    left: 5vw;
+  }
+  .skills_shape_2 {
+    top: 93vh;
+    left: 7vw;
+    animation: skills_2_animation 5s both ease-in-out infinite;
+  }
+  @keyframes skills_2_animation {
+    0% {
+      transform: translate3d(-12px, -8px, 10px) scale3d(0.9, 0.9, 1)
+        skew(10deg, -10deg);
+    }
+    50% {
+      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) skew(0deg, 0deg);
+    }
+    100% {
+      transform: translate3d(-12px, -8px, 10px) scale3d(0.9, 0.9, 1)
+        skew(10deg, -10deg);
+    }
+  }
+  .skills_shape_3 {
+    top: 80vh;
+    left: 90vw;
+    animation: skills_3_animation 7s both ease-in-out infinite;
+  }
+  @keyframes skills_3_animation {
+    0% {
+      transform: translate(0px, 0px) skew(0deg, 0deg);
+    }
+    50% {
+      transform: translate(-0px, 20px) skew(-10deg, 9deg);
+    }
+    100% {
+      transform: translate(0px, 0px) skew(0deg, 0deg);
+    }
+  }
+  .skills_shape_4 {
+    top: 90vh;
+    left: 100vw;
+  }
+  @include media("<phone") {
+    height: initial;
+  }
+  &__dots {
+    left: 151px !important;
+    top: 93px !important;
+    @include media("<phone") {
+      left: 20px;
+    }
+  }
+  &__title {
+    color: $black_primary;
+    left: 8vw;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: left;
+    &:hover {
+      color: white;
+      z-index: 9461364979;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2%;
+    &-skill {
+      width: 8vw;
+      padding: 2% 3% 2% 3%;
+      height: 17vh;
+      @include media("<phone") {
+        width: 17vw;
+      }
+    }
+    .skills-img {
+      width: 8vw;
+      transition: all 1s;
+
+      &:hover {
+        filter: drop-shadow(0px 19px 14px #1532481f);
+        transform: translatey(-20px);
+        animation: infinite;
+      }
+      @include media("<phone") {
+        width: 100%;
+      }
+    }
+  }
+  @keyframes floating {
+    0% {
+      filter: drop-shadow(0px 19px 4px #1532481f);
+      transform: translatey(0px);
+    }
+    50% {
+      filter: drop-shadow(0px 19px 14px #1532481f);
+      transform: translatey(-20px);
+    }
+    100% {
+      filter: drop-shadow(0px 19px 4px #1532481f);
+      transform: translatey(0px);
+    }
+  }
+
+  .circle {
+    position: relative;
+    z-index: 55;
+    top: -134px;
+    left: -20px;
+    @include media(">=desktop") {
+      top: -141px;
+      left: -14px;
+    }
+    @include media("<=tablet") {
+      display: none;
+    }
+    &:hover {
+      .html {
+        stroke-dasharray: 400;
+        stroke-dashoffset: 0;
+      }
+      .css {
+        stroke-dasharray: 350;
+        stroke-dashoffset: 0;
+      }
+      .js {
+        stroke-dasharray: 320;
+        stroke-dashoffset: 0;
+      }
+      .git {
+        stroke-dasharray: 220;
+        stroke-dashoffset: 0;
+      }
+      .react {
+        stroke-dasharray: 320;
+        stroke-dashoffset: 0;
+      }
+      .veu {
+        stroke-dasharray: 220;
+        stroke-dashoffset: 0;
+      }
+      .api {
+        stroke-dasharray: 220;
+        stroke-dashoffset: 0;
+      }
+      .sass {
+        stroke-dasharray: 350;
+        stroke-dashoffset: 0;
+      }
+      .jQuery {
+        stroke-dasharray: 350;
+        stroke-dashoffset: 0;
+      }
+      .bootstrap {
+        stroke-dasharray: 400;
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+  .effect {
+    stroke-dasharray: 630;
+    stroke-dashoffset: 630;
+    transition: ease-out 0.5s;
+  }
+}
+.experince {
+  // background-color: $ghost-color;
+  h1 {
+    color: $black_primary;
+    font-weight: bold;
+    padding: 16vh 5vh 3vw 23vh;
+    font-size: 3rem;
+    @include media("<phone") {
+      padding: 17vh 8vh 3vw 6vh;
+    }
+  }
+  .boxes {
+    display: flex;
+    padding: 0 10vw;
+    height: 100vh;
+    @include media("<phone") {
+      flex-direction: column;
+      height: initial;
+    }
+    .degrees {
+      background-color: white;
+      box-shadow: $boxShadow;
+      margin: 2vw;
+      padding: 2vw;
+      height: 50%;
+      width: 35%;
+      @include media("<phone") {
+        width: 88%;
+      }
+    }
+    .element {
+      color: $black_primary;
+      padding: 4px 0vw;
+      span {
+        color: $gray;
+        font-weight: 500;
+        padding-left: 22px;
+      }
+      .element-title {
+        img {
+          padding-right: 5px;
+          @include media("<phone") {
+            margin-right: 5px;
+            width: 15px;
+          }
+        }
+        display: flex;
+        align-items: center;
+      }
+      .border {
+        border-left: 1.7px solid $purple-primary;
+        padding-left: 3vw;
+        margin-left: 1vw;
+        padding-bottom: 1.4vw;
+        @include media("<phone") {
+          padding-left: 20px;
+        }
+        p {
+          padding-bottom: 0.5rem;
+          padding-top: 0.5rem;
+          color: $black_secondary;
+        }
+      }
+    }
+    .jobs {
+      background-color: white;
+      background-color: white;
+      margin: 2vw;
+      box-shadow: $boxShadow;
+      padding: 2vw;
+      width: 35%;
+      height: fit-content;
+      @include media("<phone") {
+        width: 88%;
+      }
+    }
+  }
+}
+
+.shape-img-div {
+  position: absolute;
+  width: 50vw;
+  height: 0vh;
+  z-index: 1;
+  top: 13vw;
+  img {
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+    right: -79vw;
+  }
+}
+.recentWork {
+  position: relative;
+  position: relative;
+  overflow-x: hidden;
+  .container {
+    backdrop-filter: blur(10px);
+    margin: 3rem;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #b2dfed82, #e6f9ff24);
+    outline: 1px solid rgba(255, 255, 255, 0.507);
+    box-shadow: 0.7px 0.9px 8.1px rgba(40, 30, 40, 0.023),
+      1.8px 2.2px 12.2px rgba(40, 30, 40, 0.034),
+      3.3px 4px 16.2px rgba(40, 30, 40, 0.041),
+      5.1px 6.2px 20.8px rgba(40, 30, 40, 0.049),
+      7.6px 9.3px 26.6px rgba(40, 30, 40, 0.056),
+      11.2px 13.6px 34.9px rgba(40, 30, 40, 0.067),
+      19px 23px 54px rgba(40, 30, 40, 0.09);
+  }
+  .work_shape_1 {
+    z-index: -1;
+    left: 2vw;
+    top: 1vw;
+  }
+  .work_shape_2 {
+    z-index: -1;
+    right: 10vw;
+    top: 80vw;
+  }
+  .work_shape_3 {
+    z-index: 0;
+    right: 11vw;
+    top: 2vw;
+    width: 19vw;
+  }
+  .work_shape_4 {
+    z-index: -1;
+    left: 10vw;
+    top: 90vw;
+  }
+  .work_shape {
+    position: absolute;
+  }
+  &_list {
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 100%;
+    .liActive {
+      color: $purple-primary;
+    }
+    li {
+      padding-inline: 2rem;
+      list-style-type: none;
+      cursor: pointer;
+      color: gray;
+      border-radius: 20px;
+      &:hover {
+        background-color: rgb(212, 212, 212);
+      }
+    }
+  }
+  .rec_title {
+    left: 6vw;
+    top: 14px;
+    @include media(">phone", "<=tablet") {
+      left: 9vw;
+      top: 18px;
+    }
+  }
+  .rec__dots {
+    top: 100px;
+    left: 122px;
+  }
+  &__title {
+    padding: 8vh 0 9vh 5vw;
+    font-size: 5rem;
+    color: $black_primary;
+    z-index: 6;
+    position: relative;
+  }
+  &__dots {
+    position: relative;
+    z-index: 6;
+    top: 14px;
+    left: 133px;
+    width: 30px;
+    opacity: 20%;
+
+    @include media("<phone") {
+      left: 20px;
+    }
+    &-img {
+      width: 40px;
+    }
+  }
+  .works {
+    display: flex;
+    padding: 2vw 2vw;
+    flex-wrap: wrap;
+    z-index: 6;
+    position: relative;
+
+    .work {
+      width: 23vw;
+      height: 23vw;
+      background: #ebebeb55;
+      margin: 1.5vw;
+      box-shadow: 0.7px 0.9px 5.3px -5px rgba(0, 0, 0, 0.015),
+        1.8px 2.2px 7.9px -5px rgba(0, 0, 0, 0.022),
+        3.3px 4px 10.5px -5px rgba(0, 0, 0, 0.028),
+        5.1px 6.2px 13.5px -5px rgba(0, 0, 0, 0.032),
+        7.6px 9.3px 17.2px -5px rgba(0, 0, 0, 0.038),
+        11.2px 13.6px 22.6px -5px rgba(0, 0, 0, 0.045),
+        19px 23px 35px -5px rgba(0, 0, 0, 0.06);
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      @include media("<=phone") {
+        width: 80vw;
+        height: 80vw;
+        margin-block: 2rem;
+      }
+    }
+
+    .p-1 {
+      background: #fff url(../img/powerPoint01.png) center center/cover
+        no-repeat !important;
+    }
+    .p-2 {
+      background: #fff url(../img/powerPoint02.png) center center/cover
+        no-repeat !important;
+    }
+    .p-3 {
+      background: #fff url(../img/powerPoint03.png) center center/cover
+        no-repeat !important;
+    }
+    .p-4 {
+      background: #fff url(../img/powerPoint04.png) center center/cover
+        no-repeat !important;
+    }
+    .p-5 {
+      background: #fff url(../img/work01.png) center center/cover no-repeat !important;
+    }
+  }
+  .showMoreDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .showMore {
+      @include media(">phone", "<=tablet") {
+        font-size: x-small;
+      }
+      text-align: center;
+      border: none;
+      outline: none;
+      text-align: center;
+      @include btnBg();
+      color: white;
+      cursor: pointer;
+      margin: 20px;
+      padding: 10px;
+    }
+  }
+}
+
+.sayHi {
+  background-color: rgb(0 255 253 / 54%);
+  height: 100vh;
+  padding: 2vw;
+  position: relative;
+  overflow: hidden;
+  .hi_shape {
+    position: absolute;
+    filter: $dropShadow;
+  }
+  .hi_shape_1 {
+    top: 2vh;
+    left: 90vw;
+  }
+  .hi_shape_2 {
+    top: 90vh;
+    left: 80vw;
+  }
+  .hi_shape_3 {
+    top: 4vh;
+    left: 2vw;
+    animation: translat 10s infinite ease-in-out both;
+  }
+  @keyframes translat {
+    0% {
+      transform: translate3d(0px, 30px, 0px) scaleY(1.3);
+    }
+    50% {
+      transform: translate3d(20px, 0px, 0px) scaleY(0.8);
+    }
+    100% {
+      transform: translate3d(0px, 30px, 0px) scaleY(1.3);
+    }
+  }
+  .hi_shape_4 {
+    top: 70vh;
+    left: 10vw;
+    animation: shape_4 10s infinite ease-in-out both;
+  }
+  @keyframes shape_4 {
+    0% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(5deg);
+    }
+  }
+  .container {
+    display: flex;
+    padding: 2vw;
+    padding-left: 10vw;
+    @include media(">phone", "<=tablet") {
+      padding-left: 0px;
+    }
+    @include media("<phone") {
+      flex-direction: column;
+      padding-left: 0vw;
+    }
+    .text {
+      width: 20vw;
+      padding-top: 1rem;
+      @include media(">phone", "<=tablet") {
+        width: 40vw;
+      }
+      @include media("<phone") {
+        width: 100vw;
+        padding-top: 0rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+      }
+      h3 {
+        color: $black_primary;
+      }
+      p {
+        color: $black_primary;
+        a {
+          color: $purple-primary;
+          text-decoration: none;
+        }
+      }
+    }
+    .form {
+      width: 65vw;
+      position: relative;
+      z-index: 888;
+      padding-left: 4vw;
+      @include media("<tablet") {
+        width: 100vw;
+      }
+      input,
+      textarea {
+        width: 17.4vw;
+        font-size: 1rem;
+        height: 7vh;
+        margin: 1vw;
+        background: #f8f8ff;
+        color: #9baacf;
+        border-radius: 10px;
+        padding: 2px;
+        padding-left: 25px;
+        box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e79c,
+          inset -0.2rem -0.2rem 0.5rem white;
+        border: none;
+        @include media("<phone") {
+          width: 70vw;
+        }
+        &:focus-visible {
+          border: none;
+          outline: none;
+        }
+      }
+      textarea {
+        padding-top: 1rem;
+      }
+      .btn {
+        box-shadow: inset 0.2rem 0.2rem 1rem #8abdff,
+          inset -0.2rem -0.2rem 1rem #915bf5,
+          0.9px 1px 2px -5px rgba(0, 0, 0, 0.034),
+          2.3px 2.6px 3.1px -5px rgba(0, 0, 0, 0.049),
+          4.4px 5px 4.4px -5px rgba(0, 0, 0, 0.061),
+          7.6px 8.6px 6.3px -5px rgba(0, 0, 0, 0.076),
+          15px 17px 11px -5px rgba(0, 0, 0, 0.11);
+      }
+      .subject,
+      .message {
+        width: 65%;
+        @include media(">phone", "<=tablet") {
+          width: 44vw;
+        }
+        @include media("<tablet") {
+          width: 70%;
+        }
+      }
+      .message {
+        height: 20vh;
+        border-radius: 20px;
+      }
+      .btn {
+        @include btnBg();
+        color: white;
+        cursor: pointer;
+        padding-left: initial;
+      }
+    }
+  }
+  .getInTouch {
+    &_title {
+      padding: 10vh 59px 0vh 8vw;
+    }
+    &__dots {
+      top: 36px;
+      left: 136px;
+    }
+  }
+}
+.experinceHover {
+  img {
+    transition: all 0.3s;
+    border-radius: 5px;
+
+    &:hover {
+      transform: scale(1.01);
+      border-radius: 20px;
+    }
+  }
+  transition: all 0.3s;
+  border-radius: 5px;
+
+  &:hover {
+    transform: scale(1.01);
+    border-radius: 25px;
+  }
+}
+.shadow {
+  box-shadow: inset 0px 0px 2.7px rgba(95, 95, 95, 0),
+    inset 0px 0px 5.9px rgba(95, 95, 95, 0.053),
+    inset 0px 0px 10px rgba(95, 95, 95, 0.065),
+    inset 0px 0px 15px rgba(95, 95, 95, 0.075),
+    inset 0px 0px 21.7px rgba(95, 95, 95, 0.085),
+    inset 0px 0px 30.7px rgba(95, 95, 95, 0.095),
+    inset 0px 0px 43.5px rgba(95, 95, 95, 0.105),
+    inset 0px 0px 63.1px rgba(95, 95, 95, 0.117),
+    inset 0px 0px 97.3px rgba(95, 95, 95, 0.134),
+    inset 0px 0px 173px rgba(95, 95, 95, 0.17);
+}
