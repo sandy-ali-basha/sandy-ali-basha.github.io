@@ -208,10 +208,10 @@ body {
   }
   .shape-4 {
     left: 5px;
-    top: 50%;
+    top: 20%;
     width: 9vw;
 
-    animation: animationFramesTwo 30s infinite ease-in-out reverse;
+    // animation: animationFramesTwo 30s infinite ease-in-out reverse;
     @include media("<tablet") {
       animation: none;
       transition: none;
@@ -243,7 +243,7 @@ header {
     inset 0px 0px 63.1px rgba(0, 0, 0, 0.117),
     inset 0px 0px 97.3px rgba(0, 0, 0, 0.134),
     inset 0px 0px 173px rgba(0, 0, 0, 0.17);
-  background: rgb(0 0 0 / 20%);
+  background: rgba(0, 0, 0, 0.082);
   section {
     height: 70%;
     nav {
@@ -293,9 +293,11 @@ header {
         }
         &::before {
           content: url(../img/white_stripes.svg);
-          width: 11vw;
+          width: 21vw;
           position: absolute;
-          left: 85px;
+          left: 93vw;
+          top: 80vh;
+          opacity: 0.4;
         }
         h2 {
           @include media(">phone", "<=tablet") {
@@ -405,7 +407,7 @@ header {
         right: -10vw;
       }
       .shape_10 {
-        top: 5vh;
+        top: -5vh;
         left: -3vw;
         z-index: 5;
       }
@@ -763,7 +765,7 @@ header {
   text-align: center;
   padding: 2vh;
   position: relative;
-
+  background-color: $ghost-color;
   .skills_shape_1,
   .skills_shape_2,
   .skills_shape_3,
@@ -939,12 +941,11 @@ header {
   }
 }
 .experince {
-  // background-color: $ghost-color;
   h1 {
-    color: $black_primary;
+    color: white;
     font-weight: bold;
     padding: 16vh 5vh 3vw 23vh;
-    font-size: 3rem;
+    font-size: 5rem;
     @include media("<phone") {
       padding: 17vh 8vh 3vw 6vh;
     }
@@ -1036,11 +1037,11 @@ header {
   position: relative;
   overflow-x: hidden;
   .container {
-    backdrop-filter: blur(10px);
-    margin: 3rem;
+    backdrop-filter: blur(5px);
+    margin: 1.5rem;
     border-radius: 10px;
-    background: linear-gradient(45deg, #b2dfed82, #e6f9ff24);
-    outline: 1px solid rgba(255, 255, 255, 0.507);
+    background: linear-gradient(45deg, #b2dfed05, #e6f9ff0c);
+    // outline: 1px solid rgba(255, 255, 255, 0.507);
     box-shadow: 0.7px 0.9px 8.1px rgba(40, 30, 40, 0.023),
       1.8px 2.2px 12.2px rgba(40, 30, 40, 0.034),
       3.3px 4px 16.2px rgba(40, 30, 40, 0.041),
@@ -1105,8 +1106,8 @@ header {
   }
   &__title {
     padding: 8vh 0 9vh 5vw;
-    font-size: 5rem;
-    color: $black_primary;
+    font-size: 4rem;
+    color: white;
     z-index: 6;
     position: relative;
   }
@@ -1127,16 +1128,18 @@ header {
   }
   .works {
     display: flex;
-    padding: 2vw 2vw;
     flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 1vw;
     z-index: 6;
     position: relative;
 
     .work {
-      width: 23vw;
-      height: 23vw;
+      width: 43vw;
+      height: 20vw;
       background: #ebebeb55;
-      margin: 1.5vw;
+
       box-shadow: 0.7px 0.9px 5.3px -5px rgba(0, 0, 0, 0.015),
         1.8px 2.2px 7.9px -5px rgba(0, 0, 0, 0.022),
         3.3px 4px 10.5px -5px rgba(0, 0, 0, 0.028),

@@ -28,6 +28,15 @@
     <meta property="og:site_name" content="Sandy" />
     <meta property="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://sandy-ali-basha.github.io/portfolio/" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting-cells.css"
+    />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -66,7 +75,7 @@
         </nav>
         <div class="title">
           <div class="header-text">
-            <h2>Hi!</h2>
+            <h2 class="hiAnimation">Hi!</h2>
             <h6 style="color: #9933ff" translate="no">I'm Sandy</h6>
             <h4>Front end developer</h4>
           </div>
@@ -116,18 +125,18 @@
       </div>
       <div class="txt">
         <h1 class="heyHeader">Hey.</h1>
-        <p>
-          Hello, I am sandy, a front-end developer<br />
-          <br />
+        <p id="text">
           I have several years of experience working with JavaScript,
           TypeScript, and SCSS. I am comfortable with vanilla JavaScript and
           have experience using popular frameworks such as React and Vue.
           <span class="light_blue"> I have also worked with TypeScript,</span>
           In addition, I have extensive experience using SCSS to create
-          maintainable and scalable CSS. Overall, I am confident in my ability
-          to write clean, maintainable code in JavaScript, TypeScript, and SCSS,
-          and I am always looking to learn more and improve my skills.
-          <br /><br />
+          maintainable and scalable CSS.
+          <br />
+          <br />
+          Overall, I am confident in my ability to write clean, maintainable
+          code in JavaScript, TypeScript, and SCSS, and I am always looking to
+          learn more and improve my skills. <br /><br />
         </p>
         <button class="zar link">
           <a target="blank" href="./sandy's Resume.pdf">Take a look at my CV</a>
@@ -135,6 +144,204 @@
       </div>
     </section>
     <div class="shadow">
+      <!-- skills end -->
+      <section class="experince">
+        <div class="circle"></div>
+
+        <h1 class="recentWork__title">Experience</h1>
+        <div class="boxes">
+          <div class="degrees experinceHover">
+            <div class="element">
+              <h5 class="element-title">
+                <img src="img/graduation-cap.svg" />
+                <span>2018 - 2021</span>
+              </h5>
+              <div class="border">
+                <h4>diploma Degree</h4>
+                <p>Technical Computer Colleges</p>
+              </div>
+            </div>
+            <div class="element">
+              <h5 class="element-title">
+                <img src="img/graduation-cap.svg" />
+                <span>June 2023</span>
+              </h5>
+              <div class="border">
+                <h4>Advanced React</h4>
+                <p>Meta at Coursera</p>
+              </div>
+            </div>
+            <div class="element">
+              <h5 class="element-title">
+                <img src="img/certificate.svg" />
+                <span>June 2023</span>
+              </h5>
+              <div class="border">
+                <h4>EDUCBA</h4>
+                <p>build responsive website using HTML / CSS / Bootstrap</p>
+              </div>
+            </div>
+          </div>
+          <div class="jobs experinceHover">
+            <div class="element">
+              <h5 class="element-title">
+                <img src="img/portfolio (1).svg" />
+                <span>08/2023 - Present,</span>
+              </h5>
+              <div class="border">
+                <h4>Front-end developer</h4>
+                <p>
+                  <a
+                    href="https://marks.sa/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Marks</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="element">
+              <h5 class="element-title">
+                <img src="img/portfolio (1).svg" />
+                <span>1/2023 - 6/2023</span>
+              </h5>
+              <div class="border">
+                <h4>Front-end developer</h4>
+                <p>
+                  <a
+                    href="https://quantumgate.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Quantum Gate</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="element">
+              <h5 class="element-title">
+                <img src="img/portfolio (1).svg" />
+                <span>7/2022 - 12/2022</span>
+              </h5>
+              <div class="border">
+                <h4>Front-end developer</h4>
+                <p>
+                  <a
+                    href="https://www.facebook.com/qtech.group.co"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Qtech technology</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- experince end -->
+      <section class="recentWork" id="myWork">
+        <img
+          class="work_shape_1 work_shape"
+          src="./img/shapes/t (3).webp"
+          alt=""
+        />
+        <img
+          class="work_shape_2 work_shape"
+          src="./img/shapes/t (2).webp"
+          alt=""
+        />
+        <img
+          class="work_shape_3 work_shape"
+          src="./img/shapes/t (1).webp"
+          alt=""
+        />
+        <img
+          class="work_shape_4 work_shape"
+          src="./img/shapes/t (16).webp"
+          alt=""
+        />
+        <div class="container">
+          <h1 class="recentWork__title rec_title">Recent Work</h1>
+          <div class="works">
+            <a
+              target="blank"
+              class="work web experinceHover "
+              href="https://sandy-ali-basha.github.io/LKGT/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/lkgt.png" alt="" />
+            </a>
+            <a
+              target="blank"
+              class="work web experinceHover atropos"
+              href="https://maranello.sy/about"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/work.png" alt="maranello Restaurant website" />
+            </a>
+
+            <a
+              target="blank"
+              class="work web experinceHover"
+              href="http://tracker.aldrtest.sy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/track.png" alt="" />
+            </a>
+            <a
+              target="blank"
+              class="work web experinceHover"
+              href="https://sandy-ali-basha.github.io/destn/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./img/Web capture_27-11-2022_134623_dastn.com.jpeg"
+                alt=""
+              />
+            </a>
+            <a
+              target="blank"
+              class="work web experinceHover"
+              href="https://sandy-ali-basha.github.io/nucrafty/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./img/Web capture_27-11-2022_134454_nucrafty.com.jpeg"
+                alt=""
+              />
+            </a>
+            <a
+              target="blank"
+              class="work web experinceHover"
+              href="https://plus-besmile.de/de"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./img/Web capture_27-11-2022_134557_plus-besmile.de.jpeg"
+                alt=""
+              />
+            </a>
+            <a
+              target="blank"
+              class="work web experinceHover"
+              href="https://new.aldrtech.sy/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/aldr.png" alt="" />
+            </a>
+          </div>
+          <div style="display: none" class="showMoreDiv">
+            <button class="showMore link">show more</button>
+          </div>
+        </div>
+      </section>
+      <!-- recent work end -->
       <section class="skills" id="skills">
         <img class="skills_shape_1" src="./img/shapes/t (14).webp" alt="" />
         <img class="skills_shape_2" src="./img/shapes/t (12).webp" alt="" />
@@ -326,215 +533,6 @@
           </div>
         </div>
       </section>
-      <!-- skills end -->
-      <section class="experince">
-        <div class="circle"></div>
-
-        <h1 class="recentWork__title">Experience</h1>
-        <div class="boxes">
-          <div class="degrees experinceHover">
-            <div class="element">
-              <h5 class="element-title">
-                <img src="img/graduation-cap.svg" />
-                <span>2018 - 2021</span>
-              </h5>
-              <div class="border">
-                <h4>diploma Degree</h4>
-                <p>Technical Computer Colleges</p>
-              </div>
-            </div>
-            <div class="element">
-              <h5 class="element-title">
-                <img src="img/graduation-cap.svg" />
-                <span>June 2023</span>
-              </h5>
-              <div class="border">
-                <h4>Advanced React</h4>
-                <p>Meta at Coursera</p>
-              </div>
-            </div>
-            <div class="element">
-              <h5 class="element-title">
-                <img src="img/certificate.svg" />
-                <span>June 2023</span>
-              </h5>
-              <div class="border">
-                <h4>EDUCBA</h4>
-                <p>build responsive website using HTML / CSS / Bootstrap</p>
-              </div>
-            </div>
-          </div>
-          <div class="jobs experinceHover">
-            <div class="element">
-              <h5 class="element-title">
-                <img src="img/portfolio (1).svg" />
-                <span>08/2023 - Present,</span>
-              </h5>
-              <div class="border">
-                <h4>Front-end developer</h4>
-                <p>
-                  <a
-                    href="https://marks.sa/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Marks</a
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="element">
-              <h5 class="element-title">
-                <img src="img/portfolio (1).svg" />
-                <span>1/2023 - 6/2023</span>
-              </h5>
-              <div class="border">
-                <h4>Front-end developer</h4>
-                <p>
-                  <a
-                    href="https://quantumgate.io/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Quantum Gate</a
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="element">
-              <h5 class="element-title">
-                <img src="img/portfolio (1).svg" />
-                <span>7/2022 - 12/2022</span>
-              </h5>
-              <div class="border">
-                <h4>Front-end developer</h4>
-                <p>
-                  <a
-                    href="https://www.facebook.com/qtech.group.co"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Qtech technology</a
-                  >
-                </p>
-              </div>
-            </div>
-
-            <!-- <div class="element">
-        <h5 class="element-title">
-          <img src="img/portfolio (1).svg">
-          <span>2019 - 2020</span>
-        </h5>
-        <div class="border">
-          <h4>Secretary</h4>
-          <p> Secretary and IT at arabic academy for E Busnis</p>
-        </div>
-      </div> -->
-          </div>
-        </div>
-      </section>
-      <!-- experince end -->
-      <section class="recentWork" id="myWork">
-        <img
-          class="work_shape_1 work_shape"
-          src="./img/shapes/t (3).webp"
-          alt=""
-        />
-        <img
-          class="work_shape_2 work_shape"
-          src="./img/shapes/t (2).webp"
-          alt=""
-        />
-        <img
-          class="work_shape_3 work_shape"
-          src="./img/shapes/t (1).webp"
-          alt=""
-        />
-        <img
-          class="work_shape_4 work_shape"
-          src="./img/shapes/t (16).webp"
-          alt=""
-        />
-        <div class="container">
-          <h1 class="recentWork__title rec_title">Recent Work</h1>
-          <div class="works">
-            <a
-              target="blank"
-              class="work web experinceHover "
-              href="https://sandy-ali-basha.github.io/LKGT/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="./img/lkgt.png" alt="" />
-            </a>
-            <a
-              target="blank"
-              class="work web experinceHover"
-              href="https://maranello.sy/about"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="./img/work.png" alt="maranello Restaurant website" />
-            </a>
-
-            <a
-              target="blank"
-              class="work web experinceHover"
-              href="http://tracker.aldrtest.sy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="./img/track.png" alt="" />
-            </a>
-            <a
-              target="blank"
-              class="work web experinceHover"
-              href="https://sandy-ali-basha.github.io/destn/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./img/Web capture_27-11-2022_134623_dastn.com.jpeg"
-                alt=""
-              />
-            </a>
-            <a
-              target="blank"
-              class="work web experinceHover"
-              href="https://sandy-ali-basha.github.io/nucrafty/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./img/Web capture_27-11-2022_134454_nucrafty.com.jpeg"
-                alt=""
-              />
-            </a>
-            <a
-              target="blank"
-              class="work web experinceHover"
-              href="https://plus-besmile.de/de"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./img/Web capture_27-11-2022_134557_plus-besmile.de.jpeg"
-                alt=""
-              />
-            </a>
-            <a
-              target="blank"
-              class="work web experinceHover"
-              href="https://new.aldrtech.sy/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="./img/aldr.png" alt="" />
-            </a>
-          </div>
-          <div style="display: none" class="showMoreDiv">
-            <button class="showMore link">show more</button>
-          </div>
-        </div>
-      </section>
-      <!-- recent work end -->
     </div>
 
     <section class="sayHi" id="sayHi">
@@ -585,18 +583,45 @@
     </section>
 
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"
-      integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/CSSRulePlugin.min.js"></script>
-    <script type="module" src="/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="./js/textAnimation.js"></script>
+    <script>
+      var hiAnimation = document.getElementsByClassName('hiAnimation')
+              Splitting({
+        target: hiAnimation,
+        by: 'chars'
+      });
 
+      const animationTl1 = gsap.timeline({
+        paused: false
+      });
+
+      let animationItems1 = gsap.utils.toArray(".char");
+
+      animationItems1.map((elem,index) => {
+        animationTl1.to(elem, {
+          y: '-1em',
+          transition: '0.5',
+          ease: 'cubic-bezier(0.65, 0.19, 0.07, 0.99)',
+          delay: index / 9
+        });
+      });
+    </script>
     <script>
             $(document).ready(function () {
+              ScrollTrigger.create({
+        animation: animationTl1,
+        trigger:hiAnimation,
+        start: 'top center',
+        end: 'bottom bottom',
+        scrub: 0.9,
+        markers: true,
+        id: 'hiAnimation'
+      });
               $(".btn").hover(function () {
                 $(this).toggleClass("animate__animated");
               });
@@ -634,7 +659,6 @@
             });
     </script>
 
-    <script src="js/script.js"></script>
     <script src="js/cursor.js"></script>
     <script src="js/skills.js"></script>
   </body>
