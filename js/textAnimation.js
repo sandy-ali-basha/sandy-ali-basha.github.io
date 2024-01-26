@@ -62,7 +62,6 @@ let imgToTop = gsap.timeline({
         start: "center center",
         end: "top top",
         toggleActions: "resume pause resume pause",
-        markers: true
     },
 });
 imgToTop.to(".imgToTop", {
@@ -80,7 +79,6 @@ let imgToBottom = gsap.timeline({
         start: "center center",
         end: "top top",
         toggleActions: "resume pause resume pause",
-        markers: true
     },
 });
 imgToBottom.to(".imgToBottom", {
