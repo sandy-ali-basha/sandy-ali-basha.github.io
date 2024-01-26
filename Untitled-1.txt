@@ -1,0 +1,191 @@
+ <section class="skills" id="skills">
+        <img class="skills_shape_1" src="./img/shapes/t (14).webp" alt="" />
+        <img class="skills_shape_2" src="./img/shapes/t (12).webp" alt="" />
+        <img class="skills_shape_3" src="./img/shapes/t (13).webp" alt="" />
+        <img class="skills_shape_4" src="./img/shapes/t (14).webp" alt="" />
+
+        <h1 class="skills__title recentWork__title">My Skills</h1>
+        <!-- <div class="skills__title">My Skills</div> -->
+        <div class="skills__container">
+          <div class="skills__container-skill">
+            <img src="img/html.svg" alt="" class="skills-img" />
+            <svg id="circle" class="circle" height="150" width="150">
+              <circle
+                class="html effect"
+                cx="225"
+                cy="75"
+                r="70"
+                stroke="#99ccff"
+                stroke-width="6"
+                fill="none"
+                transform="rotate(-90 150 150)"
+              ></circle>
+            </svg>
+          </div>
+          <div class="skills__container-skill">
+            <img src="img/css.svg" alt="" class="skills-img" />
+            <svg id="circle" class="circle" height="150" width="150">
+              <circle
+                class="effect css"
+                cx="225"
+                cy="75"
+                r="70"
+                stroke="#99ccff"
+                stroke-width="6"
+                fill="none"
+                transform="rotate(-90 150 150)"
+              ></circle>
+            </svg>
+          </div>
+          <div class="skills__container-skill">
+            <img src="img/js.svg" alt="" class="skills-img" />
+            <svg id="circle" class="circle" height="150" width="150">
+              <circle
+                class="effect js"
+                cx="225"
+                cy="75"
+                r="70"
+                stroke="#99ccff"
+                stroke-width="6"
+                fill="none"
+                transform="rotate(-90 150 150)"
+              ></circle>
+            </svg>
+          </div>
+          <div class="skills__container-skill">
+            <img src="img/git.svg" alt="" class="skills-img" />
+            <svg id="circle" class="circle" height="150" width="150">
+              <circle
+                class="effect git"
+                cx="225"
+                cy="75"
+                r="70"
+                stroke="#99ccff"
+                stroke-width="6"
+                fill="none"
+                transform="rotate(-90 150 150)"
+              ></circle>
+            </svg>
+          </div>
+          <div class="skills__container-skill">
+            <img src="img/react.svg" alt="" class="skills-img" />
+            <svg id="circle" class="circle" height="150" width="150">
+              <circle
+                class="effect react"
+                cx="225"
+                cy="75"
+                r="70"
+                stroke="#99ccff"
+                stroke-width="6"
+                fill="none"
+                transform="rotate(-90 150 150)"
+              ></circle>
+            </svg>
+          </div>
+          <div class="skills__container-skill">
+            <img src="img/vue.png" alt="" class="skills-img" />
+            <svg id="circle" class="circle" height="150" width="150">
+              <circle
+                class="effect veu"
+                cx="225"
+                cy="75"
+                r="70"
+                stroke="#99ccff"
+                stroke-width="6"
+                fill="none"
+                transform="rotate(-90 150 150)"
+              ></circle>
+            </svg>
+          </div>
+          <div class="skills__container-skill">
+            <img src="img/api.svg" alt="" class="skills-img" />
+            <svg id="circle" class="circle" height="150" width="150">
+              <circle
+                class="effect api"
+                cx="225"
+                cy="75"
+                r="70"
+                stroke="#99ccff"
+                stroke-width="6"
+                fill="none"
+                transform="rotate(-90 150 150)"
+              ></circle>
+            </svg>
+          </div>
+          <div class="skills__container-skill">
+            <img src="img/sass.svg" alt="" class="skills-img" />
+            <svg id="circle" class="circle" height="150" width="150">
+              <circle
+                class="effect sass"
+                cx="225"
+                cy="75"
+                r="70"
+                stroke="#99ccff"
+                stroke-width="6"
+                fill="none"
+                transform="rotate(-90 150 150)"
+              ></circle>
+            </svg>
+          </div>
+          <div class="skills__container-skill">
+            <img src="./img/skill.png" alt="" class="skills-img" />
+            <svg id="circle " class="circle" height="150" width="150">
+              <circle
+                class="effect jQuery"
+                cx="225"
+                cy="75"
+                r="70"
+                stroke="#99ccff"
+                stroke-width="6"
+                fill="none"
+                transform="rotate(-90 150 150)"
+              ></circle>
+            </svg>
+          </div>
+          <div class="skills__container-skill">
+            <img src="./img/R.png" alt="" class="skills-img" />
+            <svg id="circle " class="circle" height="150" width="150">
+              <circle
+                class="effect jQuery"
+                cx="225"
+                cy="75"
+                r="70"
+                stroke="#99ccff"
+                stroke-width="6"
+                fill="none"
+                transform="rotate(-90 150 150)"
+              ></circle>
+            </svg>
+          </div>
+          <div class="bar skills__container-skill">
+            <img src="img/bootstrap.png" alt="" class="skills-img" />
+            <svg id="circle " class="circle" height="150" width="150">
+              <circle
+                class="effect bootstrap"
+                cx="225"
+                cy="75"
+                r="70"
+                stroke="#99ccff"
+                stroke-width="6"
+                fill="none"
+                transform="rotate(-90 150 150)"
+              ></circle>
+            </svg>
+          </div>
+          <div class="bar skills__container-skill">
+            <img src="img/gsap.png" alt="" class="skills-img" />
+            <svg id="circle " class="circle" height="150" width="150">
+              <circle
+                class="effect api"
+                cx="225"
+                cy="75"
+                r="70"
+                stroke="#99ccff"
+                stroke-width="6"
+                fill="none"
+                transform="rotate(-90 150 150)"
+              ></circle>
+            </svg>
+          </div>
+        </div>
+      </section>

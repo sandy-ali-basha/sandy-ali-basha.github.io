@@ -6,7 +6,6 @@ $i: 10;
   padding: 0;
   font-family: "Hammersmith One", sans-serif;
   // cursor: none;
-  transition: all 0.5s;
 }
 $boxShadow: 0.7px 0.9px 8.1px rgba(0, 0, 0, 0.023),
   1.8px 2.2px 12.2px rgba(0, 0, 0, 0.034), 3.3px 4px 16.2px rgba(0, 0, 0, 0.041),
@@ -151,6 +150,11 @@ body {
     }
   }
 }
+
+.hiAnimation {
+  transform: translateY(-1em);
+}
+
 .spinner-wrapper {
   position: fixed;
   top: 0;
@@ -410,6 +414,7 @@ header {
         top: -5vh;
         left: -3vw;
         z-index: 5;
+        width: 100px;
       }
 
       .av {
@@ -1020,7 +1025,7 @@ header {
 
 .shape-img-div {
   position: absolute;
-  width: 50vw;
+  width: 45vw;
   height: 0vh;
   z-index: 1;
   top: 13vw;
@@ -1033,22 +1038,10 @@ header {
   }
 }
 .recentWork {
-  position: relative;
-  position: relative;
   overflow-x: hidden;
   .container {
-    backdrop-filter: blur(5px);
     margin: 1.5rem;
     border-radius: 10px;
-    background: linear-gradient(45deg, #b2dfed05, #e6f9ff0c);
-    // outline: 1px solid rgba(255, 255, 255, 0.507);
-    box-shadow: 0.7px 0.9px 8.1px rgba(40, 30, 40, 0.023),
-      1.8px 2.2px 12.2px rgba(40, 30, 40, 0.034),
-      3.3px 4px 16.2px rgba(40, 30, 40, 0.041),
-      5.1px 6.2px 20.8px rgba(40, 30, 40, 0.049),
-      7.6px 9.3px 26.6px rgba(40, 30, 40, 0.056),
-      11.2px 13.6px 34.9px rgba(40, 30, 40, 0.067),
-      19px 23px 54px rgba(40, 30, 40, 0.09);
   }
   .work_shape_1 {
     z-index: -1;
@@ -1092,14 +1085,7 @@ header {
       }
     }
   }
-  .rec_title {
-    left: 6vw;
-    top: 14px;
-    @include media(">phone", "<=tablet") {
-      left: 9vw;
-      top: 18px;
-    }
-  }
+
   .rec__dots {
     top: 100px;
     left: 122px;
@@ -1387,4 +1373,45 @@ header {
     inset 0px 0px 63.1px rgba(95, 95, 95, 0.117),
     inset 0px 0px 97.3px rgba(95, 95, 95, 0.134),
     inset 0px 0px 173px rgba(95, 95, 95, 0.17);
+}
+
+.gsap {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  .group {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .item {
+    width: 10vw;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0.5vw;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .goToWebsite {
+      color: rgb(255 255 255);
+      padding: 10px;
+      border-radius: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      background: rgb(101 121 167 / 10%);
+      -webkit-backdrop-filter: blur(2px);
+      backdrop-filter: blur(4px);
+      width: 70%;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-wrap: wrap;
+    }
+  }
 }

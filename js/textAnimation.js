@@ -4,7 +4,6 @@ let tl = gsap.timeline({
         start: "top center",
         end: "+1000",
         scrub: 1,
-        markers: true
     },
 });
 tl.from(".shape-4", {
@@ -52,5 +51,40 @@ shape_7.from(".shape_7", {
 }).to(".shape_7", {
     x: 0,
     transition: '1',
+    ease: "power1.in"
+})
+// imgToTop
+let imgToTop = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".imgToTop",
+        id: "imgToTop",
+        scrub: 5,
+        start: "center center",
+        end: "top top",
+        toggleActions: "resume pause resume pause",
+        markers: true
+    },
+});
+imgToTop.to(".imgToTop", {
+    y: "-20vh",
+    duration: 10,
+    ease: "power1.in"
+})
+
+// imgToBottom
+let imgToBottom = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".imgToBottom",
+        id: "imgToBottom",
+        scrub: 5,
+        start: "center center",
+        end: "top top",
+        toggleActions: "resume pause resume pause",
+        markers: true
+    },
+});
+imgToBottom.to(".imgToBottom", {
+    y: "20vh",
+    duration: 10,
     ease: "power1.in"
 })
