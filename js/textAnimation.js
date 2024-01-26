@@ -58,7 +58,7 @@ let imgToTop = gsap.timeline({
     scrollTrigger: {
         trigger: ".imgToTop",
         id: "imgToTop",
-        scrub: 5,
+        scrub: 2,
         start: "center center",
         end: "top top",
         toggleActions: "resume pause resume pause",
@@ -75,7 +75,7 @@ let imgToBottom = gsap.timeline({
     scrollTrigger: {
         trigger: ".imgToBottom",
         id: "imgToBottom",
-        scrub: 5,
+        scrub: 2,
         start: "center center",
         end: "top top",
         toggleActions: "resume pause resume pause",

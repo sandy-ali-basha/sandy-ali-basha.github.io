@@ -433,42 +433,42 @@
   mix-blend-mode: difference;
 }
 
-.mobiles {
-  height: 120vh;
-  overflow: hidden;
-}
-.mobiles .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  height: 100vh;
-}
-.mobiles .container .mockup {
+.mockup {
   width: 50vw;
   right: 10px;
   z-index: 1;
   position: absolute;
   filter: drop-shadow(0.7px 0.9px 8.1px rgba(0, 25, 80, 0.023)) drop-shadow(1.8px 2.2px 12.2px rgba(0, 25, 80, 0.034)) drop-shadow(3.3px 4px 16.2px rgba(0, 25, 80, 0.041)) drop-shadow(5.1px 6.2px 20.8px rgba(0, 25, 80, 0.049)) drop-shadow(7.6px 9.3px 26.6px rgba(0, 25, 80, 0.056)) drop-shadow(11.2px 13.6px 34.9px rgba(0, 25, 80, 0.067)) drop-shadow(19px 23px 54px rgba(0, 25, 80, 0.205));
 }
-.mobiles .container .mockup img {
+.mockup img {
   width: 100%;
+}
+
+.mobiles {
+  height: 120vh;
+  overflow: hidden;
+}
+.mobiles .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
 }
 .mobiles .container .screensContainer {
   position: relative;
-  top: 100vh;
-  left: -70vw;
+  display: flex;
   z-index: -1;
 }
 .mobiles .container .screens {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  transform: translateY(-40vw) translateX(80vw);
+  width: 90vw;
 }
 .mobiles .container .screens .img_item {
   margin: 1.3rem;
-  width: 17vw;
+  width: 20vw;
   aspect-ratio: 3/5.5;
 }
 .mobiles .container .screens .img_item img {
@@ -478,6 +478,24 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.laptops {
+  -moz-column-count: 2;
+  -moz-column-gap: 0px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 0px;
+  column-count: 2;
+  column-gap: 0px;
+  width: 100vw;
+}
+.laptops img {
+  width: 49vw;
+  border-radius: 25px;
+  padding: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: inline-block;
 }
 
 * {
@@ -1559,7 +1577,7 @@ header section .hero-cube-2 .hero-picture-2 {
 }
 
 .recentWork {
-  overflow-x: hidden;
+  position: relative;
 }
 .recentWork .container {
   margin: 1.5rem;

@@ -1,49 +1,42 @@
+.mockup {
+  width: 50vw;
+  right: 10px;
+  z-index: 1;
+  position: absolute;
+  filter: drop-shadow(0.7px 0.9px 8.1px rgba(0, 25, 80, 0.023))
+    drop-shadow(1.8px 2.2px 12.2px rgba(0, 25, 80, 0.034))
+    drop-shadow(3.3px 4px 16.2px rgba(0, 25, 80, 0.041))
+    drop-shadow(5.1px 6.2px 20.8px rgba(0, 25, 80, 0.049))
+    drop-shadow(7.6px 9.3px 26.6px rgba(0, 25, 80, 0.056))
+    drop-shadow(11.2px 13.6px 34.9px rgba(0, 25, 80, 0.067))
+    drop-shadow(19px 23px 54px rgba(0, 25, 80, 0.205));
+  img {
+    width: 100%;
+  }
+}
 .mobiles {
   height: 120vh;
   overflow: hidden;
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: relative;
     height: 100vh;
-    .mockup {
-      width: 50vw;
-      right: 10px;
-      z-index: 1;
-      position: absolute;
-      filter: drop-shadow(0.7px 0.9px 8.1px rgba(0, 25, 80, 0.023))
-        drop-shadow(1.8px 2.2px 12.2px rgba(0, 25, 80, 0.034))
-        drop-shadow(3.3px 4px 16.2px rgba(0, 25, 80, 0.041))
-        drop-shadow(5.1px 6.2px 20.8px rgba(0, 25, 80, 0.049))
-        drop-shadow(7.6px 9.3px 26.6px rgba(0, 25, 80, 0.056))
-        drop-shadow(11.2px 13.6px 34.9px rgba(0, 25, 80, 0.067))
-        drop-shadow(19px 23px 54px rgba(0, 25, 80, 0.205));
-      img {
-        width: 100%;
-      }
-    }
+
     .screensContainer {
       position: relative;
-      top: 100vh;
-      left: -70vw;
+      display: flex;
       z-index: -1;
     }
     .screens {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      transform: translateY(-40vw) translateX(80vw);
-      // transform: rotate(45deg);
-      .item2 {
-        // transform: translateY(0vh);
-      }
-      .item3 {
-        // transform: translateY(20vh);
-      }
+      width: 90vw;
       .img_item {
         margin: 1.3rem;
-        width: 17vw;
+        width: 20vw;
         aspect-ratio: 3/5.5;
 
         img {

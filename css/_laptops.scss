@@ -1,0 +1,17 @@
+.laptops {
+  -moz-column-count: 2;
+  -moz-column-gap: 0px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 0px;
+  column-count: 2;
+  column-gap: 0px;
+  width: 100vw;
+  img {
+    width: 49vw;
+    border-radius: 25px;
+    padding: 5px;
+    object-fit: cover;
+
+    display: inline-block;
+  }
+}
