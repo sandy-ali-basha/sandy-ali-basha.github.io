@@ -433,11 +433,24 @@
   mix-blend-mode: difference;
 }
 
+.responsive_section {
+  padding: 15rem 0vw 55vh 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.responsive_section h2 {
+  width: 70vw;
+  color: white;
+  filter: drop-shadow(0.7px 0.9px 8.1px rgba(44, 44, 44, 0.023)) drop-shadow(1.8px 2.2px 12.2px rgba(44, 44, 44, 0.034)) drop-shadow(3.3px 4px 16.2px rgba(44, 44, 44, 0.041)) drop-shadow(5.1px 6.2px 20.8px rgba(44, 44, 44, 0.049)) drop-shadow(7.6px 9.3px 26.6px rgba(44, 44, 44, 0.056)) drop-shadow(11.2px 13.6px 34.9px rgba(44, 44, 44, 0.067)) drop-shadow(19px 23px 54px rgba(44, 44, 44, 0.09));
+  font-size: 3rem;
+}
+
 .mockup {
-  width: 50vw;
-  right: 10px;
-  z-index: 1;
-  position: absolute;
+  width: 70vw;
+  z-index: -1;
+  right: 10vw;
+  position: relative;
   filter: drop-shadow(0.7px 0.9px 8.1px rgba(0, 25, 80, 0.023)) drop-shadow(1.8px 2.2px 12.2px rgba(0, 25, 80, 0.034)) drop-shadow(3.3px 4px 16.2px rgba(0, 25, 80, 0.041)) drop-shadow(5.1px 6.2px 20.8px rgba(0, 25, 80, 0.049)) drop-shadow(7.6px 9.3px 26.6px rgba(0, 25, 80, 0.056)) drop-shadow(11.2px 13.6px 34.9px rgba(0, 25, 80, 0.067)) drop-shadow(19px 23px 54px rgba(0, 25, 80, 0.205));
 }
 .mockup img {
@@ -445,8 +458,9 @@
 }
 
 .mobiles {
-  height: 120vh;
-  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  padding-top: 40vh;
 }
 .mobiles .container {
   display: flex;
@@ -480,6 +494,10 @@
      object-fit: cover;
 }
 
+.imgToTop {
+  margin-top: -5vh !important;
+}
+
 .laptops {
   -moz-column-count: 2;
   -moz-column-gap: 0px;
@@ -488,14 +506,27 @@
   column-count: 2;
   column-gap: 0px;
   width: 100vw;
+  padding-top: 10vh;
+}
+.laptops > :nth-child(1) {
+  margin-top: -10vh;
 }
 .laptops img {
-  width: 49vw;
-  border-radius: 25px;
+  width: 49.5vw;
+  border-radius: 10px;
   padding: 5px;
   -o-object-fit: cover;
      object-fit: cover;
   display: inline-block;
+  transition: all 0.5s;
+}
+
+.Macbook {
+  width: 60vw;
+  position: relative;
+  z-index: -1;
+  left: 30vw;
+  transform: scale(1.2) scaleX(-1);
 }
 
 * {
@@ -538,7 +569,7 @@ body {
 .darkMode .recentWork,
 .darkMode .sayHi {
   background: #18191a;
-  color: #FFF;
+  color: #fff;
 }
 .darkMode header h1,
 .darkMode .hey h1,
@@ -559,30 +590,30 @@ body {
   color: #99ffff !important;
 }
 .darkMode .box {
-  background: #3D3D3D !important;
+  background: #3d3d3d !important;
 }
 .darkMode .box h3 {
-  color: #FFF !important;
+  color: #fff !important;
 }
 .darkMode .box p {
   color: #99ccff !important;
 }
 .darkMode .cursor {
-  background: #FFF;
+  background: #fff;
 }
 .darkMode .cursor-follower {
-  border-color: #FFF;
+  border-color: #fff;
   background: transparent;
 }
 .darkMode .degrees,
 .darkMode .jobs {
-  background-color: #3D3D3D !important;
+  background-color: #3d3d3d !important;
 }
 .darkMode .degrees h5,
 .darkMode .degrees h4,
 .darkMode .jobs h5,
 .darkMode .jobs h4 {
-  color: #FFF;
+  color: #fff;
 }
 .darkMode .degrees p,
 .darkMode .jobs p {
@@ -597,30 +628,26 @@ body {
 .darkMode .sayHi input,
 .darkMode .sayHi textarea {
   background: #212121 !important;
-  color: #FFF !important;
+  color: #fff !important;
 }
 .darkMode .sayHi input::-moz-placeholder, .darkMode .sayHi textarea::-moz-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #FFF;
+  color: #fff;
   opacity: 1; /* Firefox */
 }
 .darkMode .sayHi input::placeholder,
 .darkMode .sayHi textarea::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #FFF;
+  color: #fff;
   opacity: 1; /* Firefox */
 }
 .darkMode .sayHi h3,
 .darkMode .sayHi p {
-  color: #FFF !important;
+  color: #fff !important;
 }
 .darkMode .sayHi .btn {
   background: #99ccff !important;
   color: #18191a !important;
-}
-
-.hiAnimation {
-  transform: translateY(-1em);
 }
 
 .spinner-wrapper {
@@ -861,8 +888,8 @@ header section .title .shape_4 {
   left: 30vw;
 }
 header section .title .shape_5 {
-  top: 80vh;
-  left: 30vw;
+  top: 107vh;
+  left: 88vw;
 }
 header section .title .shape_6 {
   top: -10vh;
@@ -1136,7 +1163,7 @@ header section .hero-cube-2 .hero-picture-2 {
 }
 .mywork .project .p {
   width: 70%;
-  color: #5E5C94;
+  color: #5e5c94;
   text-align: center;
   padding-bottom: 30px;
 }
@@ -1242,7 +1269,7 @@ header section .hero-cube-2 .hero-picture-2 {
 }
 .mywork .cv .p {
   width: 70%;
-  color: #5E5C94;
+  color: #5e5c94;
   text-align: center;
   padding-bottom: 30px;
 }
@@ -1472,6 +1499,9 @@ header section .hero-cube-2 .hero-picture-2 {
   transition: ease-out 0.5s;
 }
 
+.experince {
+  position: relative;
+}
 .experince h1 {
   color: white;
   font-weight: bold;
@@ -1487,6 +1517,8 @@ header section .hero-cube-2 .hero-picture-2 {
   display: flex;
   padding: 0 10vw;
   height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 449px) {
   .experince .boxes {
@@ -1512,7 +1544,7 @@ header section .hero-cube-2 .hero-picture-2 {
   padding: 4px 0vw;
 }
 .experince .boxes .element span {
-  color: #D3D2E0;
+  color: #d3d2e0;
   font-weight: 500;
   padding-left: 22px;
 }
@@ -1543,7 +1575,7 @@ header section .hero-cube-2 .hero-picture-2 {
 .experince .boxes .element .border p {
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
-  color: #5E5C94;
+  color: #5e5c94;
 }
 .experince .boxes .jobs {
   background-color: white;
@@ -1577,11 +1609,13 @@ header section .hero-cube-2 .hero-picture-2 {
 }
 
 .recentWork {
-  position: relative;
+  padding: 10vh 0px;
 }
 .recentWork .container {
+  position: relative;
   margin: 1.5rem;
   border-radius: 10px;
+  display: flex;
 }
 .recentWork .work_shape_1 {
   z-index: -1;
@@ -1960,4 +1994,20 @@ header section .hero-cube-2 .hero-picture-2 {
   text-decoration: none;
   text-transform: uppercase;
   text-wrap: wrap;
+}
+
+.rec_title {
+  position: absolute;
+  top: 14vh;
+  width: 60vw;
+  font-size: 3.5rem;
+  line-height: 5.5rem;
+  letter-spacing: 1.5px;
+  filter: drop-shadow(0.7px 0.9px 8.1px rgba(44, 44, 44, 0.023)) drop-shadow(1.8px 2.2px 12.2px rgba(44, 44, 44, 0.034)) drop-shadow(3.3px 4px 16.2px rgba(44, 44, 44, 0.041)) drop-shadow(5.1px 6.2px 20.8px rgba(44, 44, 44, 0.049)) drop-shadow(7.6px 9.3px 26.6px rgba(44, 44, 44, 0.056)) drop-shadow(11.2px 13.6px 34.9px rgba(44, 44, 44, 0.067)) drop-shadow(19px 23px 54px rgba(44, 44, 44, 0.09));
+}
+.rec_title .word {
+  overflow: hidden;
+}
+.rec_title .word .char {
+  transform: translateY(-1em);
 }/*# sourceMappingURL=style.css.map */

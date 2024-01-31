@@ -6,12 +6,23 @@
   column-count: 2;
   column-gap: 0px;
   width: 100vw;
+  padding-top: 10vh;
+  > :nth-child(1) {
+    margin-top: -10vh;
+  }
   img {
-    width: 49vw;
-    border-radius: 25px;
+    width: 49.5vw;
+    border-radius: 10px;
     padding: 5px;
     object-fit: cover;
-
     display: inline-block;
+    transition: all 0.5s;
   }
+}
+.Macbook {
+  width: 60vw;
+  position: relative;
+  z-index: -1;
+  left: 30vw;
+  transform: scale(1.2) scaleX(-1);
 }

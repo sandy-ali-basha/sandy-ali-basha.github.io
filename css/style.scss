@@ -7,18 +7,7 @@ $i: 10;
   font-family: "Hammersmith One", sans-serif;
   // cursor: none;
 }
-$boxShadow: 0.7px 0.9px 8.1px rgba(0, 0, 0, 0.023),
-  1.8px 2.2px 12.2px rgba(0, 0, 0, 0.034), 3.3px 4px 16.2px rgba(0, 0, 0, 0.041),
-  5.1px 6.2px 20.8px rgba(0, 0, 0, 0.049),
-  7.6px 9.3px 26.6px rgba(0, 0, 0, 0.056),
-  11.2px 13.6px 34.9px rgba(0, 0, 0, 0.067), 19px 23px 54px rgba(0, 0, 0, 0.09);
-$dropShadow: drop-shadow(0.7px 0.9px 8.1px rgba(44, 44, 44, 0.023))
-  drop-shadow(1.8px 2.2px 12.2px rgba(44, 44, 44, 0.034))
-  drop-shadow(3.3px 4px 16.2px rgba(44, 44, 44, 0.041))
-  drop-shadow(5.1px 6.2px 20.8px rgba(44, 44, 44, 0.049))
-  drop-shadow(7.6px 9.3px 26.6px rgba(44, 44, 44, 0.056))
-  drop-shadow(11.2px 13.6px 34.9px rgba(44, 44, 44, 0.067))
-  drop-shadow(19px 23px 54px rgba(44, 44, 44, 0.09));
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -149,10 +138,6 @@ body {
       color: $background !important;
     }
   }
-}
-
-.hiAnimation {
-  transform: translateY(-1em);
 }
 
 .spinner-wrapper {
@@ -389,8 +374,8 @@ header {
         left: 30vw;
       }
       .shape_5 {
-        top: 80vh;
-        left: 30vw;
+        top: 107vh;
+        left: 88vw;
       }
       .shape_6 {
         top: -10vh;
@@ -946,6 +931,7 @@ header {
   }
 }
 .experince {
+  position: relative;
   h1 {
     color: white;
     font-weight: bold;
@@ -959,6 +945,8 @@ header {
     display: flex;
     padding: 0 10vw;
     height: 100vh;
+    align-items: center;
+    justify-content: center;
     @include media("<phone") {
       flex-direction: column;
       height: initial;
@@ -1038,10 +1026,12 @@ header {
   }
 }
 .recentWork {
-  position: relative;
+  padding: 10vh 0px;
   .container {
+    position: relative;
     margin: 1.5rem;
     border-radius: 10px;
+    display: flex;
   }
   .work_shape_1 {
     z-index: -1;
@@ -1412,6 +1402,21 @@ header {
       text-decoration: none;
       text-transform: uppercase;
       text-wrap: wrap;
+    }
+  }
+}
+.rec_title {
+  position: absolute;
+  top: 14vh;
+  width: 60vw;
+  font-size: 3.5rem;
+  line-height: 5.5rem;
+  letter-spacing: 1.5px;
+  filter: $dropShadow;
+  .word {
+    overflow: hidden;
+    .char {
+      transform: translateY(-1em);
     }
   }
 }

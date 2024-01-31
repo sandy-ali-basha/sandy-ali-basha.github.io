@@ -1,8 +1,24 @@
+.responsive_section {
+  padding: 15rem 0vw 55vh 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  * {
+    // border: 1px solid red;
+  }
+  h2 {
+    width: 70vw;
+    color: white;
+    filter: $dropShadow;
+    font-size: 3rem;
+  }
+}
+
 .mockup {
-  width: 50vw;
-  right: 10px;
-  z-index: 1;
-  position: absolute;
+  width: 70vw;
+  z-index: -1;
+  right: 10vw;
+  position: relative;
   filter: drop-shadow(0.7px 0.9px 8.1px rgba(0, 25, 80, 0.023))
     drop-shadow(1.8px 2.2px 12.2px rgba(0, 25, 80, 0.034))
     drop-shadow(3.3px 4px 16.2px rgba(0, 25, 80, 0.041))
@@ -15,8 +31,9 @@
   }
 }
 .mobiles {
-  height: 120vh;
-  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  padding-top: 40vh;
   .container {
     display: flex;
     justify-content: center;
@@ -55,4 +72,7 @@
       }
     }
   }
+}
+.imgToTop {
+  margin-top: -5vh !important;
 }
