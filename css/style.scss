@@ -496,29 +496,17 @@ header {
   .img {
     padding: 2vw;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include media("<phone") {
-      display: flex;
-      justify-content: center;
-      align-item: center;
       width: 100%;
       height: 80%;
-      transform: translateY(10vh);
+      margin-top: 10vh;
     }
-    .strips {
-      position: relative;
-      top: -23vh;
-      width: 15vw;
-      z-index: -55;
-      left: 6vw;
-      @include media("<phone") {
-        display: none;
-      }
-    }
+
     .cvImg {
-      width: 28vw;
-      position: relative;
-      top: 17vh;
-      left: -6vw;
+      width: 50%;
       z-index: 555;
       @include media("<=tablet") {
         width: 35vw;
@@ -1227,11 +1215,16 @@ header {
 }
 
 .sayHi {
-  background-color: rgb(0 255 253 / 54%);
+  background-color: #00fffd8a;
+
   height: 100vh;
   padding: 2vw;
   position: relative;
   overflow: hidden;
+  @include media("<phone") {
+    background-color: #00ffff86;
+    backdrop-filter: blur(10px);
+  }
   .hi_shape {
     position: absolute;
     filter: $dropShadow;
@@ -1248,6 +1241,9 @@ header {
     top: 4vh;
     left: 2vw;
     animation: translat 10s infinite ease-in-out both;
+    @include media("<phone") {
+      width: 30vw;
+    }
   }
   @keyframes translat {
     0% {
@@ -1377,6 +1373,9 @@ header {
   .getInTouch {
     &_title {
       padding: 10vh 59px 0vh 8vw;
+      @include media("<phone") {
+        padding: 9vh 53px 0vh 3vw;
+      }
     }
     &__dots {
       top: 36px;
@@ -1477,9 +1476,15 @@ header {
 }
 .responsive_section {
   position: relative;
+
   &_shape {
     position: absolute;
     left: -5vw;
     top: 10vh;
+    @include media("<phone") {
+      width: 30vw;
+      left: -20px;
+      top: -14vh;
+    }
   }
 }
