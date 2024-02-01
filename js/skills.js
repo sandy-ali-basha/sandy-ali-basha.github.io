@@ -151,14 +151,11 @@ $(document).ready(function () {
 		start: 'top center',
 		end: 'bottom bottom',
 		id: 'recentWorkTitle',
-		markers: true,
 	});
 	$(".btn").hover(function () {
 		$(this).toggleClass("animate__animated");
 	});
-	$(".zar").hover(function () {
-		$(this).toggleClass("animate__animated");
-	});
+
 	//Preloader
 	preloaderFadeOutTime = 500;
 	function hidePreloader() {

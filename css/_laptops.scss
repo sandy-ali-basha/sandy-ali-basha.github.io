@@ -25,4 +25,8 @@
   z-index: -1;
   left: 30vw;
   transform: scale(1.2) scaleX(-1);
+  @include media("<phone") {
+    width: 70vw;
+    left: 15vw;
+  }
 }

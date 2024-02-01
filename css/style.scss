@@ -196,11 +196,10 @@ body {
     }
   }
   .shape-4 {
-    left: 5px;
-    top: 20%;
+    left: -33px;
+    top: 91%;
     width: 9vw;
 
-    // animation: animationFramesTwo 30s infinite ease-in-out reverse;
     @include media("<tablet") {
       animation: none;
       transition: none;
@@ -233,8 +232,12 @@ header {
     inset 0px 0px 97.3px rgba(0, 0, 0, 0.134),
     inset 0px 0px 173px rgba(0, 0, 0, 0.17);
   background: rgba(0, 0, 0, 0.082);
+  @include media("<phone") {
+    height: 100vh;
+  }
   section {
     height: 70%;
+
     nav {
       display: flex;
       align-items: center;
@@ -244,6 +247,13 @@ header {
       position: absolute;
       z-index: 5555;
       width: 90%;
+
+      @include media("<tablet") {
+        position: relative;
+        padding: 50px 10px;
+        margin: 0 auto;
+        width: initial;
+      }
       @include media("<phone") {
         display: none;
         .toggle {
@@ -277,29 +287,24 @@ header {
         color: white;
         font-size: 4rem;
         font-weight: 700;
+        * {
+          text-transform: uppercase;
+        }
         @include media("<phone") {
-          font-size: 2rem;
+          font-size: 2.5rem;
+          text-align: center;
+          width: 90vw;
+          margin: 0 auto;
         }
-        &::before {
-          content: url(../img/white_stripes.svg);
-          width: 21vw;
-          position: absolute;
-          left: 93vw;
-          top: 80vh;
-          opacity: 0.4;
-        }
-        h2 {
-          @include media(">phone", "<=tablet") {
+
+        @include media(">phone", "<=tablet") {
+          h2 {
             font-size: 3rem;
           }
-        }
-        h6 {
-          @include media(">phone", "<=tablet") {
+          h6 {
             font-size: 2rem;
           }
-        }
-        h4 {
-          @include media(">phone", "<=tablet") {
+          h4 {
             font-size: 2rem;
           }
         }
@@ -311,6 +316,12 @@ header {
         padding-top: 10px;
         justify-content: space-between;
         width: 15%;
+        transform: translateY(10vh);
+        @include media("<phone") {
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
         a {
           text-decoration: none;
           color: white;
@@ -339,7 +350,7 @@ header {
         }
         @include media("<phone") {
           position: relative;
-          width: 100vw !important;
+          width: 0vw !important;
           top: -1vh;
           right: 0px;
           width: 90%;
@@ -400,6 +411,9 @@ header {
         left: -3vw;
         z-index: 5;
         width: 100px;
+        @include media("<phone") {
+          top: 130vh;
+        }
       }
 
       .av {
@@ -471,7 +485,7 @@ header {
   min-height: 100vh;
   background: $ghost-color;
   position: relative;
-  @include media("<tablet") {
+  @include media("<=phone") {
     display: flex;
     flex-direction: column;
   }
@@ -488,6 +502,7 @@ header {
       align-item: center;
       width: 100%;
       height: 80%;
+      transform: translateY(10vh);
     }
     .strips {
       position: relative;
@@ -505,6 +520,10 @@ header {
       top: 17vh;
       left: -6vw;
       z-index: 555;
+      @include media("<=tablet") {
+        width: 35vw;
+        left: auto;
+      }
       @include media("<phone") {
         width: 60vw;
         top: initial;
@@ -939,7 +958,24 @@ header {
     font-size: 5rem;
     @include media("<phone") {
       padding: 17vh 8vh 3vw 6vh;
+      font-size: 2.5rem;
     }
+  }
+  &_shape {
+    position: absolute;
+  }
+  .shape_1 {
+    left: 11vw;
+    top: 40vh;
+    width: 10vw;
+    z-index: -1;
+  }
+  .shape_2 {
+    left: 79vw;
+    top: 96vh;
+    width: 13vw;
+    z-index: 10;
+    opacity: 0.7;
   }
   .boxes {
     display: flex;
@@ -956,8 +992,12 @@ header {
       box-shadow: $boxShadow;
       margin: 2vw;
       padding: 2vw;
-      height: 50%;
+      min-height: 50%;
       width: 35%;
+
+      @include media("<tablet") {
+        margin: 1vw;
+      }
       @include media("<phone") {
         width: 88%;
       }
@@ -1032,6 +1072,16 @@ header {
     margin: 1.5rem;
     border-radius: 10px;
     display: flex;
+    @include media("<phone") {
+      flex-direction: column;
+      margin-bottom: 10vh;
+      margin-top: 20vh;
+      .rec_title {
+        font-size: 2rem;
+        top: -16vh;
+        width: 80vw;
+      }
+    }
   }
   .work_shape_1 {
     z-index: -1;
@@ -1418,5 +1468,18 @@ header {
     .char {
       transform: translateY(-1.5em);
     }
+  }
+  @include media("<tablet") {
+    font-size: 2.5rem;
+    line-height: initial;
+    letter-spacing: initial;
+  }
+}
+.responsive_section {
+  position: relative;
+  &_shape {
+    position: absolute;
+    left: -5vw;
+    top: 10vh;
   }
 }

@@ -19,6 +19,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="shortcut icon" href="img/id-card.svg" />
     <meta
       name="keywords"
@@ -60,17 +61,6 @@
             <a href="#myWork" class="menu">.myWork()</a>
             <a href="#skills" class="menu">.skills()</a>
             <a href="#sayHi" class="menu">.contactMe()</a>
-
-            <div class="toggle toggle--daynight">
-              <input
-                type="checkbox"
-                id="toggle--daynight"
-                class="toggle--checkbox"
-              />
-              <label class="toggle--btn" for="toggle--daynight"
-                ><span class="toggle--feature"></span
-              ></label>
-            </div>
           </div>
         </nav>
         <div class="title">
@@ -117,10 +107,9 @@
       <section class="hey" id="hey">
         <img class="hey_shape shape-one" src="./img/shapes/t (9).webp" alt="" />
         <img class="hey_shape shape-2" src="./img/shapes/t (13).webp" alt="" />
-        <img class="hey_shape shape-4" src="./img/shapes/t (10).webp" alt="" />
+        <img class="hey_shape shape-4" src="./img/shapes/t (12).webp" alt="" />
 
         <div class="img">
-          <img src="img/stripes.svg" alt="" class="strips" />
           <img src="img/heyAvatar.png" alt="" class="float cvImg" />
         </div>
         <div class="txt">
@@ -139,7 +128,7 @@
             my journey to learn and refine my skills is ongoing. I'm excited to
             bring my expertise to new challenges and opportunities.
           </p>
-          <button class="zar link">
+          <button class="zar link" data-aos="fade-up">
             <a target="blank" href="./sandy's Resume.pdf"
               >Take a look at my CV</a
             >
@@ -148,9 +137,19 @@
       </section>
       <!-- skills end -->
       <section class="experince">
-        <div class="circle"></div>
+        <img
+          class="experince_shape shape_1"
+          src="./img/shapes/t (10).webp"
+          alt=""
+        />
+        <img
+          class="experince_shape shape_2"
+          src="./img/shapes/t (2).webp"
+          alt=""
+        />
 
         <h1 class="recentWork__title">My Experience</h1>
+
         <div class="boxes">
           <div class="degrees experinceHover">
             <div class="element">
@@ -263,6 +262,11 @@
       </section>
       <!-- recent work end -->
       <section class="responsive_section">
+        <img
+          src="./img/shapes/t (11).webp"
+          class="responsive_section_shape"
+          alt=""
+        />
         <h2>
           Experience smooth navigation on all mobile devices with our responsive
           work.
@@ -311,7 +315,6 @@
           src="./img/shapes/t (16).webp"
           alt=""
         />
-        <img class="hi_shape hi_shape_4" src="./img/shapes/t (3).webp" alt="" />
 
         <h1 class="recentWork__title getInTouch_title">Get In Touch</h1>
         <div class="container">
@@ -361,11 +364,12 @@
     </main>
 
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/CSSRulePlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/textAnimation.js"></script>
 
     <script src="js/cursor.js"></script>
