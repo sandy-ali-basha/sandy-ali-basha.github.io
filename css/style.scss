@@ -1462,12 +1462,13 @@ header {
   line-height: 5.5rem;
   letter-spacing: 1.5px;
   filter: $dropShadow;
-  .word {
-    overflow: hidden;
-    .char {
-      transform: translateY(-1.5em);
-    }
-  }
+  // .word {
+  //   overflow: hidden;
+  //   .char {
+  //     transform: translateY(2em);
+  //   }
+  // }
+
   @include media("<tablet") {
     font-size: 2.5rem;
     line-height: initial;
@@ -1486,5 +1487,48 @@ header {
       left: -20px;
       top: -14vh;
     }
+  }
+}
+
+.animation {
+  .char {
+    animation: slide-in 0.5s cubic-bezier(0.5, 0, 0.5, 1) both;
+    animation-delay: calc(20ms * var(--char-index));
+  }
+}
+
+@keyframes slide-in {
+  to {
+    transform: translateY(0em);
+    opacity: 1;
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(-5deg);
+  }
+  50% {
+    transform: translate3d(0, 30px, 0) rotate(5deg);
+  }
+  100% {
+    transform: translate3d(0, -0, 0) rotate(-5deg);
+  }
+}
+.floatingItem {
+  animation: floating 9s ease-in infinite;
+}
+
+#recentWorkTitle,
+#responsive_section_text,
+#heyHeader,
+#getInTouch_title,
+#Experience_title {
+  .char {
+    transform: translateY(1.5em);
+    opacity: 0.5;
+  }
+  .word {
+    overflow: hidden;
   }
 }

@@ -43,7 +43,7 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div class="spinner-wrapper">
       <div class="spinner">
-        <img src="img/loader.gif" class="div-animation" />
+        <img src="img/loader.gif" class="div-animation" alt="loader" />
       </div>
     </div>
     <div class="cursor"></div>
@@ -64,40 +64,59 @@
           </div>
         </nav>
         <div class="title">
-          <div class="header-text">
+          <div class="header-text" id="headerText">
             <h2 class="hiAnimation">Hi!</h2>
             <h6 style="color: #9933ff" translate="no">I'm Sandy</h6>
             <h4>Front end developer</h4>
           </div>
 
-          <img class="div-animation" src="img/avatar.png" />
+          <img class="div-animation" src="img/avatar.png" alt="avatar" />
           <!-- 1 -->
-          <img class="shape_2" src="img/shapes/t (2).webp" />
+          <img
+            class="shape_2 floatingItem "
+            src="img/shapes/t (2).webp"
+            alt="shape"
+          />
 
-          <img class="shape_5" src="img/shapes/t (5).webp" />
+          <img
+            class="shape_5 floatingItem"
+            style="animation-delay: 1s;"
+            src="img/shapes/t (5).webp"
+            alt="shape"
+          />
           <!-- 6 -->
-          <img class="shape_7" src="img/shapes/t (7).webp" />
+          <img
+            class="shape_7 floatingItem"
+            style="animation-delay: 2s;"
+            src="img/shapes/t (7).webp"
+            alt="shape"
+          />
           <!-- 9 -->
-          <img class="shape_10" src="img/shapes/t (11).webp" />
+          <img
+            class="shape_10 floatingItem"
+            style="animation-delay: 1.5s;"
+            src="img/shapes/t (11).webp"
+            alt="shape"
+          />
 
           <div class="header-contact-icons">
             <a
               class="sotialLink"
               target="blank"
               href="https://www.instagram.com/sandyalibasha/"
-              ><img src="img/instagram.svg" />
+              ><img src="img/instagram.svg" alt="shape" />
             </a>
             <a
               class="sotialLink"
               target="blank"
               href="https://www.facebook.com/sandy.alibasha"
-              ><img src="img/facebook.svg"
+              ><img src="img/facebook.svg" alt="shape"
             /></a>
             <a
               class="sotialLink"
               target="blank"
               href="https://www.linkedin.com/in/sandy-ali-basha/"
-              ><img src="img/linkedin.svg"
+              ><img src="img/linkedin.svg" alt="shape"
             /></a>
           </div>
         </div>
@@ -105,16 +124,33 @@
     </header>
     <main>
       <section class="hey" id="hey">
-        <img class="hey_shape shape-one" src="./img/shapes/t (9).webp" alt="" />
-        <img class="hey_shape shape-2" src="./img/shapes/t (13).webp" alt="" />
-        <img class="hey_shape shape-4" src="./img/shapes/t (12).webp" alt="" />
+        <img
+          class="hey_shape shape-one"
+          src="./img/shapes/t (9).webp"
+          alt="portfolio img"
+        />
+        <img
+          class="hey_shape shape-2"
+          src="./img/shapes/t (13).webp"
+          alt="portfolio img"
+        />
+        <img
+          class="hey_shape shape-4"
+          src="./img/shapes/t (12).webp"
+          alt="portfolio img"
+        />
 
         <div class="img">
-          <img src="img/heyAvatar.png" alt="" class="float cvImg" />
+          <img
+            src="img/heyAvatar.png"
+            alt="portfolio img"
+            class="float cvImg"
+            data-aos="fade-in"
+          />
         </div>
         <div class="txt">
-          <h1 class="heyHeader">Hey.</h1>
-          <p id="text">
+          <h1 class="heyHeader" id="heyHeader">Hey.</h1>
+          <p id="text" data-aos="fade-in">
             With years of hands-on experience in JavaScript, and SCSS, I've
             honed my skills in both vanilla JavaScript and popular frameworks
             like React and Vue.
@@ -128,7 +164,7 @@
             my journey to learn and refine my skills is ongoing. I'm excited to
             bring my expertise to new challenges and opportunities.
           </p>
-          <button class="zar link" data-aos="fade-up">
+          <button class="zar link">
             <a target="blank" href="./sandy's Resume.pdf"
               >Take a look at my CV</a
             >
@@ -140,21 +176,21 @@
         <img
           class="experince_shape shape_1"
           src="./img/shapes/t (10).webp"
-          alt=""
+          alt="portfolio img"
         />
         <img
           class="experince_shape shape_2"
           src="./img/shapes/t (2).webp"
-          alt=""
+          alt="portfolio img"
         />
 
-        <h1 class="recentWork__title">My Experience</h1>
+        <h1 class="recentWork__title" id="Experience_title">My Experience</h1>
 
         <div class="boxes">
           <div class="degrees experinceHover">
             <div class="element">
               <h5 class="element-title">
-                <img src="img/graduation-cap.svg" />
+                <img src="img/graduation-cap.svg" alt="graduation-cap" />
                 <span>2018 - 2021</span>
               </h5>
               <div class="border">
@@ -164,7 +200,7 @@
             </div>
             <div class="element">
               <h5 class="element-title">
-                <img src="img/graduation-cap.svg" />
+                <img src="img/graduation-cap.svg" alt="icon" />
                 <span>June 2023</span>
               </h5>
               <div class="border">
@@ -174,7 +210,7 @@
             </div>
             <div class="element">
               <h5 class="element-title">
-                <img src="img/certificate.svg" />
+                <img src="img/certificate.svg" alt="icon" />
                 <span>June 2023</span>
               </h5>
               <div class="border">
@@ -244,35 +280,71 @@
           <h1 class="recentWork__title rec_title" id="recentWorkTitle">
             I design and code captivating web apps with integrated dashboards.
           </h1>
-          <img src="./img/Macbook.png" class="Macbook" alt="" />
+          <img src="./img/Macbook.png" class="Macbook" alt="portfolio img" />
         </div>
       </section>
       <section class="laptops">
-        <img src="./img/laptop/laptop (1).jpeg" class="w-50" alt="" />
-        <img src="./img/laptop/laptop (4).jpeg" class="w-50" alt="" />
-        <img src="./img/laptop/laptop (7).jpeg" class="w-50" alt="" />
+        <img
+          src="./img/laptop/laptop (1).jpeg"
+          class="w-50"
+          alt="portfolio img"
+        />
+        <img
+          src="./img/laptop/laptop (4).jpeg"
+          class="w-50"
+          alt="portfolio img"
+        />
+        <img
+          src="./img/laptop/laptop (7).jpeg"
+          class="w-50"
+          alt="portfolio img"
+        />
 
-        <img src="./img/laptop/laptop (1).jpg" class="w-50" alt="" />
-        <img src="./img/laptop/laptop (2).jpg" class="w-50" alt="" />
-        <img src="./img/laptop/laptop (3).jpg" class="w-50" alt="" />
-        <img src="./img/laptop/laptop (1).png" class="w-50" alt="" />
+        <img
+          src="./img/laptop/laptop (1).jpg"
+          class="w-50"
+          alt="portfolio img"
+        />
+        <img
+          src="./img/laptop/laptop (2).jpg"
+          class="w-50"
+          alt="portfolio img"
+        />
+        <img
+          src="./img/laptop/laptop (3).jpg"
+          class="w-50"
+          alt="portfolio img"
+        />
+        <img
+          src="./img/laptop/laptop (1).png"
+          class="w-50"
+          alt="portfolio img"
+        />
 
-        <img src="./img/laptop/laptop (2).png" class="w-50" alt="" />
-        <img src="./img/laptop/laptop (3).png" class="w-50" alt="" />
+        <img
+          src="./img/laptop/laptop (2).png"
+          class="w-50"
+          alt="portfolio img"
+        />
+        <img
+          src="./img/laptop/laptop (3).png"
+          class="w-50"
+          alt="portfolio img"
+        />
       </section>
       <!-- recent work end -->
       <section class="responsive_section">
         <img
           src="./img/shapes/t (11).webp"
           class="responsive_section_shape"
-          alt=""
+          alt="portfolio img"
         />
-        <h2>
+        <h2 id="responsive_section_text">
           Experience smooth navigation on all mobile devices with our responsive
           work.
         </h2>
         <div class="mockup">
-          <img src="./img/Smartphone.png" alt="" />
+          <img src="./img/Smartphone.png" alt="portfolio img" />
         </div>
       </section>
       <section class="mobiles">
@@ -280,43 +352,53 @@
           <div class="screensContainer">
             <div class="screens position-relative">
               <div class="img_item imgToTop">
-                <img src="./img/phoneScreens/screen1.jpg" alt="" />
+                <img src="./img/phoneScreens/screen1.jpg" alt="portfolio img" />
               </div>
               <div class="img_item item2 imgToBottom">
-                <img src="./img/phoneScreens/screen2.jpg" alt="" />
+                <img src="./img/phoneScreens/screen2.jpg" alt="portfolio img" />
               </div>
               <div class="img_item imgToTop">
-                <img src="./img/phoneScreens/screen3.jpg" alt="" />
+                <img src="./img/phoneScreens/screen3.jpg" alt="portfolio img" />
               </div>
               <div class="img_item item3 imgToBottom">
-                <img src="./img/phoneScreens/screen9.png" alt="" />
+                <img src="./img/phoneScreens/screen9.png" alt="portfolio img" />
               </div>
               <div class="img_item imgToTop">
-                <img src="./img/phoneScreens/screen5.jpg" alt="" />
+                <img src="./img/phoneScreens/screen5.jpg" alt="portfolio img" />
               </div>
               <div class="img_item item2 imgToBottom">
-                <img src="./img/phoneScreens/screen6.jpg" alt="" />
+                <img src="./img/phoneScreens/screen6.jpg" alt="portfolio img" />
               </div>
               <div class="img_item imgToTop">
-                <img src="./img/phoneScreens/screen7.jpg" alt="" />
+                <img src="./img/phoneScreens/screen7.jpg" alt="portfolio img" />
               </div>
               <div class="img_item item3 imgToBottom">
-                <img src="./img/phoneScreens/screen8.jpg" alt="" />
+                <img src="./img/phoneScreens/screen8.jpg" alt="portfolio img" />
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="sayHi" id="sayHi">
-        <img class="hi_shape hi_shape_1" src="./img/shapes/t (9).webp" alt="" />
-        <img class="hi_shape hi_shape_2" src="./img/shapes/t (1).webp" alt="" />
+        <img
+          class="hi_shape hi_shape_1"
+          src="./img/shapes/t (9).webp"
+          alt="portfolio img"
+        />
+        <img
+          class="hi_shape hi_shape_2"
+          src="./img/shapes/t (1).webp"
+          alt="portfolio img"
+        />
         <img
           class="hi_shape hi_shape_3"
           src="./img/shapes/t (16).webp"
-          alt=""
+          alt="portfolio img"
         />
 
-        <h1 class="recentWork__title getInTouch_title">Get In Touch</h1>
+        <h1 class="recentWork__title getInTouch_title" id="getInTouch_title">
+          Get In Touch
+        </h1>
         <div class="container">
           <div class="text">
             <h3>Let's talk about everything!</h3>
@@ -374,5 +456,8 @@
 
     <script src="js/cursor.js"></script>
     <script src="js/skills.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -1991,12 +1991,6 @@ header section .hero-cube-2 .hero-picture-2 {
   letter-spacing: 1.5px;
   filter: drop-shadow(0.7px 0.9px 8.1px rgba(44, 44, 44, 0.023)) drop-shadow(1.8px 2.2px 12.2px rgba(44, 44, 44, 0.034)) drop-shadow(3.3px 4px 16.2px rgba(44, 44, 44, 0.041)) drop-shadow(5.1px 6.2px 20.8px rgba(44, 44, 44, 0.049)) drop-shadow(7.6px 9.3px 26.6px rgba(44, 44, 44, 0.056)) drop-shadow(11.2px 13.6px 34.9px rgba(44, 44, 44, 0.067)) drop-shadow(19px 23px 54px rgba(44, 44, 44, 0.09));
 }
-.rec_title .word {
-  overflow: hidden;
-}
-.rec_title .word .char {
-  transform: translateY(-1.5em);
-}
 @media (max-width: 899px) {
   .rec_title {
     font-size: 2.5rem;
@@ -2019,4 +2013,46 @@ header section .hero-cube-2 .hero-picture-2 {
     left: -20px;
     top: -14vh;
   }
+}
+
+.animation .char {
+  animation: slide-in 0.5s cubic-bezier(0.5, 0, 0.5, 1) both;
+  animation-delay: calc(20ms * var(--char-index));
+}
+
+@keyframes slide-in {
+  to {
+    transform: translateY(0em);
+    opacity: 1;
+  }
+}
+@keyframes floating {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(-5deg);
+  }
+  50% {
+    transform: translate3d(0, 30px, 0) rotate(5deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(-5deg);
+  }
+}
+.floatingItem {
+  animation: floating 9s ease-in infinite;
+}
+
+#recentWorkTitle .char,
+#responsive_section_text .char,
+#heyHeader .char,
+#getInTouch_title .char,
+#Experience_title .char {
+  transform: translateY(1.5em);
+  opacity: 0.5;
+}
+#recentWorkTitle .word,
+#responsive_section_text .word,
+#heyHeader .word,
+#getInTouch_title .word,
+#Experience_title .word {
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
