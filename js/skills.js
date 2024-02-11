@@ -53,7 +53,6 @@ $(window).scroll(function () {
 	slideDown('heyHeader')
 	slideDown('Experience_title')
 	slideDown('getInTouch_title')
-
 });
 
 //-------------------------------------
@@ -73,22 +72,4 @@ $(document).ready(function () {
 	hidePreloader()
 
 	slideDown('headerText')
-
-
-	$(".showMore").click(function () {
-		$(".work").slideDown();
-	});
-
-	$(".powerPoint").click(function () {
-		$(".web").hide();
-		$(".power").show();
-		$(".powerPoint").addClass("liActive");
-		$(".websites").removeClass("liActive");
-	});
-	$(".websites").click(function () {
-		$(".power").hide();
-		$(".web").show();
-		$(".websites").addClass("liActive");
-		$(".powerPoint").removeClass("liActive");
-	});
 });

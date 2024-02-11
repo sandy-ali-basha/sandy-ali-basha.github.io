@@ -162,8 +162,8 @@
 .cursor {
   position: fixed;
   background-color: black;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 100%;
   z-index: 1;
   transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
@@ -967,14 +967,6 @@ header section .hero-cube-2 .hero-picture-2 {
   font-size: 8rem;
   margin-top: -20vh;
 }
-.hey .txt h1::before {
-  content: url(../img/stripes.svg);
-  position: relative;
-  top: 122px;
-  left: -80px;
-  /* background-color: red; */
-  z-index: -5;
-}
 .hey .txt p {
   width: 80%;
   font-weight: 200;
@@ -1270,6 +1262,12 @@ header section .hero-cube-2 .hero-picture-2 {
   left: 7vw;
   animation: skills_2_animation 5s both ease-in-out infinite;
 }
+@media (max-width: 899px) {
+  .skills .skills_shape_2 {
+    animation: none;
+    transition: none;
+  }
+}
 @keyframes skills_2_animation {
   0% {
     transform: translate3d(-12px, -8px, 10px) scale3d(0.9, 0.9, 1) skew(10deg, -10deg);
@@ -1285,6 +1283,12 @@ header section .hero-cube-2 .hero-picture-2 {
   top: 80vh;
   left: 90vw;
   animation: skills_3_animation 7s both ease-in-out infinite;
+}
+@media (max-width: 899px) {
+  .skills .skills_shape_3 {
+    animation: none;
+    transition: none;
+  }
 }
 @keyframes skills_3_animation {
   0% {
@@ -1351,6 +1355,12 @@ header section .hero-cube-2 .hero-picture-2 {
   filter: drop-shadow(0px 19px 14px rgba(21, 50, 72, 0.1215686275));
   transform: translatey(-20px);
   animation: infinite;
+}
+@media (max-width: 899px) {
+  .skills__container .skills-img:hover {
+    animation: none;
+    transition: none;
+  }
 }
 @media (max-width: 449px) {
   .skills__container .skills-img {
@@ -1758,6 +1768,12 @@ header section .hero-cube-2 .hero-picture-2 {
   left: 2vw;
   animation: translat 10s infinite ease-in-out both;
 }
+@media (max-width: 899px) {
+  .sayHi .hi_shape_3 {
+    animation: none;
+    transition: none;
+  }
+}
 @media (max-width: 449px) {
   .sayHi .hi_shape_3 {
     width: 30vw;
@@ -1778,6 +1794,12 @@ header section .hero-cube-2 .hero-picture-2 {
   top: 70vh;
   left: 10vw;
   animation: shape_4 10s infinite ease-in-out both;
+}
+@media (max-width: 899px) {
+  .sayHi .hi_shape_4 {
+    animation: none;
+    transition: none;
+  }
 }
 @keyframes shape_4 {
   0% {
@@ -2019,6 +2041,12 @@ header section .hero-cube-2 .hero-picture-2 {
   animation: slide-in 0.5s cubic-bezier(0.5, 0, 0.5, 1) both;
   animation-delay: calc(20ms * var(--char-index));
 }
+@media (max-width: 899px) {
+  .animation .char {
+    animation: none;
+    transition: none;
+  }
+}
 
 @keyframes slide-in {
   to {
@@ -2039,6 +2067,12 @@ header section .hero-cube-2 .hero-picture-2 {
 }
 .floatingItem {
   animation: floating 9s ease-in infinite;
+}
+@media (max-width: 899px) {
+  .floatingItem {
+    animation: none;
+    transition: none;
+  }
 }
 
 #recentWorkTitle .char,
