@@ -2083,6 +2083,16 @@ header section .hero-cube-2 .hero-picture-2 {
   transform: translateY(1.5em);
   opacity: 0.5;
 }
+@media (max-width: 449px) {
+  #recentWorkTitle .char,
+  #responsive_section_text .char,
+  #heyHeader .char,
+  #getInTouch_title .char,
+  #Experience_title .char {
+    opacity: 1;
+    transform: translateY(0em);
+  }
+}
 #recentWorkTitle .word,
 #responsive_section_text .word,
 #heyHeader .word,

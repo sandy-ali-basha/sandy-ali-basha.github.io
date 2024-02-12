@@ -1554,6 +1554,10 @@ header {
   .char {
     transform: translateY(1.5em);
     opacity: 0.5;
+    @include media("<phone") {
+      opacity: 1;
+      transform: translateY(0em);
+    }
   }
   .word {
     overflow: hidden;
