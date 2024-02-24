@@ -370,32 +370,31 @@ header {
         z-index: -1;
         filter: $dropShadow;
       }
-
       .shape_2 {
-        top: -5vh;
-        left: 30vw;
+        top: -30px; /* -5vh = -5% of 600px */
+        left: 240px; /* 30vw = 30% of 800px */
         width: 100px;
       }
       .shape_3 {
-        top: 98vh;
-        left: 1vw;
+        top: 588px; /* 98vh = 98% of 600px */
+        left: 8px; /* 1vw = 1% of 800px */
       }
       .shape_4 {
-        top: 30vh;
-        left: 30vw;
+        top: 180px; /* 30vh = 30% of 600px */
+        left: 240px; /* 30vw = 30% of 800px */
       }
       .shape_5 {
-        top: 107vh;
-        left: 88vw;
+        top: 610px;
+        left: 770px;
       }
       .shape_6 {
-        top: -10vh;
-        right: 10vw;
+        top: -60px; /* -10vh = -10% of 600px */
+        right: 80px; /* 10vw = 10% of 800px */
       }
       .shape_7 {
-        top: 18vh;
-        right: 2vw;
-        width: 10vw;
+        top: 160px;
+        right: 10px;
+        width: 100px;
       }
       .shape_8 {
         top: 90vh;
@@ -407,8 +406,8 @@ header {
         right: -10vw;
       }
       .shape_10 {
-        top: -5vh;
-        left: -3vw;
+        top: 0px;
+        left: -50px;
         z-index: 5;
         width: 100px;
         @include media("<phone") {
@@ -763,19 +762,15 @@ header {
     filter: $dropShadow;
   }
   .skills_shape_1 {
-    top: 5vh;
-    left: 5vw;
+    top: 30px; /* 5vh = 5% of 600px */
+    left: 40px; /* 5vw = 5% of 800px */
   }
   .skills_shape_2 {
-    top: 93vh;
-    left: 7vw;
+    top: 558px; /* 93vh = 93% of 600px */
+    left: 56px; /* 7vw = 7% of 800px */
     animation: skills_2_animation 5s both ease-in-out infinite;
-
-    @include media("<tablet") {
-      animation: none;
-      transition: none;
-    }
   }
+
   @keyframes skills_2_animation {
     0% {
       transform: translate3d(-12px, -8px, 10px) scale3d(0.9, 0.9, 1)
@@ -790,8 +785,8 @@ header {
     }
   }
   .skills_shape_3 {
-    top: 80vh;
-    left: 90vw;
+    top: 480px;
+    left: 720px;
     animation: skills_3_animation 7s both ease-in-out infinite;
 
     @include media("<tablet") {
@@ -811,8 +806,8 @@ header {
     }
   }
   .skills_shape_4 {
-    top: 90vh;
-    left: 100vw;
+    top: 540px;
+    left: 800px;
   }
   @include media("<phone") {
     height: initial;
@@ -960,15 +955,15 @@ header {
     position: absolute;
   }
   .shape_1 {
-    left: 11vw;
-    top: 40vh;
-    width: 10vw;
+    left: 88px; /* 11vw = 11% of 800px */
+    top: 240px; /* 40vh = 40% of 600px */
+    width: 80px; /* 10vw = 10% of 800px */
     z-index: -1;
   }
   .shape_2 {
-    left: 79vw;
-    top: 96vh;
-    width: 13vw;
+    left: 632px; /* 79vw = 79% of 800px */
+    top: 576px; /* 96vh = 96% of 600px */
+    width: 104px; /* 13vw = 13% of 800px */
     z-index: 10;
     opacity: 0.7;
   }
@@ -1051,7 +1046,7 @@ header {
   width: 45vw;
   height: 0vh;
   z-index: 1;
-  top: 13vw;
+  top: 104px;
   img {
     width: 100%;
     position: absolute;
@@ -1080,25 +1075,26 @@ header {
   }
   .work_shape_1 {
     z-index: -1;
-    left: 2vw;
-    top: 1vw;
+    left: 16px; /* 2vw = 2% of 800px */
+    top: 8px; /* 1vw = 1% of 800px */
   }
   .work_shape_2 {
     z-index: -1;
-    right: 10vw;
-    top: 80vw;
+    right: 80px; /* 10vw = 10% of 800px */
+    top: 640px; /* 80vw = 80% of 800px */
   }
   .work_shape_3 {
     z-index: 0;
-    right: 11vw;
-    top: 2vw;
-    width: 19vw;
+    right: 88px; /* 11vw = 11% of 800px */
+    top: 16px; /* 2vw = 2% of 800px */
+    width: 152px; /* 19vw = 19% of 800px */
   }
   .work_shape_4 {
     z-index: -1;
-    left: 10vw;
-    top: 90vw;
+    left: 80px; /* 10vw = 10% of 800px */
+    top: 720px; /* 90vw = 90% of 800px */
   }
+
   .work_shape {
     position: absolute;
   }
@@ -1237,16 +1233,17 @@ header {
     filter: $dropShadow;
   }
   .hi_shape_1 {
-    top: 2vh;
-    left: 90vw;
+    top: 12px; /* 2vh = 2% of 600px */
+    left: 720px; /* 90vw = 90% of 800px */
   }
   .hi_shape_2 {
-    top: 90vh;
-    left: 80vw;
+    top: 540px; /* 90vh = 90% of 600px */
+    left: 640px; /* 80vw = 80% of 800px */
   }
   .hi_shape_3 {
-    top: 4vh;
-    left: 2vw;
+    top: 24px; /* 4vh = 4% of 600px */
+    left: 16px; /* 2vw = 2% of 800px */
+
     animation: translat 10s infinite ease-in-out both;
 
     @include media("<tablet") {
@@ -1269,8 +1266,8 @@ header {
     }
   }
   .hi_shape_4 {
-    top: 70vh;
-    left: 10vw;
+    top: 420px; /* 70vh = 70% of 600px */
+    left: 80px; /* 10vw = 10% of 800px */
     animation: shape_4 10s infinite ease-in-out both;
 
     @include media("<tablet") {

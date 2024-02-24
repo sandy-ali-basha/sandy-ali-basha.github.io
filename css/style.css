@@ -813,30 +813,30 @@ header section .title .shape_10 {
   filter: drop-shadow(0.7px 0.9px 8.1px rgba(44, 44, 44, 0.023)) drop-shadow(1.8px 2.2px 12.2px rgba(44, 44, 44, 0.034)) drop-shadow(3.3px 4px 16.2px rgba(44, 44, 44, 0.041)) drop-shadow(5.1px 6.2px 20.8px rgba(44, 44, 44, 0.049)) drop-shadow(7.6px 9.3px 26.6px rgba(44, 44, 44, 0.056)) drop-shadow(11.2px 13.6px 34.9px rgba(44, 44, 44, 0.067)) drop-shadow(19px 23px 54px rgba(44, 44, 44, 0.09));
 }
 header section .title .shape_2 {
-  top: -5vh;
-  left: 30vw;
+  top: -30px; /* -5vh = -5% of 600px */
+  left: 240px; /* 30vw = 30% of 800px */
   width: 100px;
 }
 header section .title .shape_3 {
-  top: 98vh;
-  left: 1vw;
+  top: 588px; /* 98vh = 98% of 600px */
+  left: 8px; /* 1vw = 1% of 800px */
 }
 header section .title .shape_4 {
-  top: 30vh;
-  left: 30vw;
+  top: 180px; /* 30vh = 30% of 600px */
+  left: 240px; /* 30vw = 30% of 800px */
 }
 header section .title .shape_5 {
-  top: 107vh;
-  left: 88vw;
+  top: 610px;
+  left: 770px;
 }
 header section .title .shape_6 {
-  top: -10vh;
-  right: 10vw;
+  top: -60px; /* -10vh = -10% of 600px */
+  right: 80px; /* 10vw = 10% of 800px */
 }
 header section .title .shape_7 {
-  top: 18vh;
-  right: 2vw;
-  width: 10vw;
+  top: 160px;
+  right: 10px;
+  width: 100px;
 }
 header section .title .shape_8 {
   top: 90vh;
@@ -848,8 +848,8 @@ header section .title .shape_9 {
   right: -10vw;
 }
 header section .title .shape_10 {
-  top: -5vh;
-  left: -3vw;
+  top: 0px;
+  left: -50px;
   z-index: 5;
   width: 100px;
 }
@@ -1254,19 +1254,13 @@ header section .hero-cube-2 .hero-picture-2 {
   filter: drop-shadow(0.7px 0.9px 8.1px rgba(44, 44, 44, 0.023)) drop-shadow(1.8px 2.2px 12.2px rgba(44, 44, 44, 0.034)) drop-shadow(3.3px 4px 16.2px rgba(44, 44, 44, 0.041)) drop-shadow(5.1px 6.2px 20.8px rgba(44, 44, 44, 0.049)) drop-shadow(7.6px 9.3px 26.6px rgba(44, 44, 44, 0.056)) drop-shadow(11.2px 13.6px 34.9px rgba(44, 44, 44, 0.067)) drop-shadow(19px 23px 54px rgba(44, 44, 44, 0.09));
 }
 .skills .skills_shape_1 {
-  top: 5vh;
-  left: 5vw;
+  top: 30px; /* 5vh = 5% of 600px */
+  left: 40px; /* 5vw = 5% of 800px */
 }
 .skills .skills_shape_2 {
-  top: 93vh;
-  left: 7vw;
+  top: 558px; /* 93vh = 93% of 600px */
+  left: 56px; /* 7vw = 7% of 800px */
   animation: skills_2_animation 5s both ease-in-out infinite;
-}
-@media (max-width: 899px) {
-  .skills .skills_shape_2 {
-    animation: none;
-    transition: none;
-  }
 }
 @keyframes skills_2_animation {
   0% {
@@ -1280,8 +1274,8 @@ header section .hero-cube-2 .hero-picture-2 {
   }
 }
 .skills .skills_shape_3 {
-  top: 80vh;
-  left: 90vw;
+  top: 480px;
+  left: 720px;
   animation: skills_3_animation 7s both ease-in-out infinite;
 }
 @media (max-width: 899px) {
@@ -1302,8 +1296,8 @@ header section .hero-cube-2 .hero-picture-2 {
   }
 }
 .skills .skills_shape_4 {
-  top: 90vh;
-  left: 100vw;
+  top: 540px;
+  left: 800px;
 }
 @media (max-width: 449px) {
   .skills {
@@ -1463,15 +1457,15 @@ header section .hero-cube-2 .hero-picture-2 {
   position: absolute;
 }
 .experince .shape_1 {
-  left: 11vw;
-  top: 40vh;
-  width: 10vw;
+  left: 88px; /* 11vw = 11% of 800px */
+  top: 240px; /* 40vh = 40% of 600px */
+  width: 80px; /* 10vw = 10% of 800px */
   z-index: -1;
 }
 .experince .shape_2 {
-  left: 79vw;
-  top: 96vh;
-  width: 13vw;
+  left: 632px; /* 79vw = 79% of 800px */
+  top: 576px; /* 96vh = 96% of 600px */
+  width: 104px; /* 13vw = 13% of 800px */
   z-index: 10;
   opacity: 0.7;
 }
@@ -1565,7 +1559,7 @@ header section .hero-cube-2 .hero-picture-2 {
   width: 45vw;
   height: 0vh;
   z-index: 1;
-  top: 13vw;
+  top: 104px;
 }
 .shape-img-div img {
   width: 100%;
@@ -1598,24 +1592,24 @@ header section .hero-cube-2 .hero-picture-2 {
 }
 .recentWork .work_shape_1 {
   z-index: -1;
-  left: 2vw;
-  top: 1vw;
+  left: 16px; /* 2vw = 2% of 800px */
+  top: 8px; /* 1vw = 1% of 800px */
 }
 .recentWork .work_shape_2 {
   z-index: -1;
-  right: 10vw;
-  top: 80vw;
+  right: 80px; /* 10vw = 10% of 800px */
+  top: 640px; /* 80vw = 80% of 800px */
 }
 .recentWork .work_shape_3 {
   z-index: 0;
-  right: 11vw;
-  top: 2vw;
-  width: 19vw;
+  right: 88px; /* 11vw = 11% of 800px */
+  top: 16px; /* 2vw = 2% of 800px */
+  width: 152px; /* 19vw = 19% of 800px */
 }
 .recentWork .work_shape_4 {
   z-index: -1;
-  left: 10vw;
-  top: 90vw;
+  left: 80px; /* 10vw = 10% of 800px */
+  top: 720px; /* 90vw = 90% of 800px */
 }
 .recentWork .work_shape {
   position: absolute;
@@ -1756,16 +1750,16 @@ header section .hero-cube-2 .hero-picture-2 {
   filter: drop-shadow(0.7px 0.9px 8.1px rgba(44, 44, 44, 0.023)) drop-shadow(1.8px 2.2px 12.2px rgba(44, 44, 44, 0.034)) drop-shadow(3.3px 4px 16.2px rgba(44, 44, 44, 0.041)) drop-shadow(5.1px 6.2px 20.8px rgba(44, 44, 44, 0.049)) drop-shadow(7.6px 9.3px 26.6px rgba(44, 44, 44, 0.056)) drop-shadow(11.2px 13.6px 34.9px rgba(44, 44, 44, 0.067)) drop-shadow(19px 23px 54px rgba(44, 44, 44, 0.09));
 }
 .sayHi .hi_shape_1 {
-  top: 2vh;
-  left: 90vw;
+  top: 12px; /* 2vh = 2% of 600px */
+  left: 720px; /* 90vw = 90% of 800px */
 }
 .sayHi .hi_shape_2 {
-  top: 90vh;
-  left: 80vw;
+  top: 540px; /* 90vh = 90% of 600px */
+  left: 640px; /* 80vw = 80% of 800px */
 }
 .sayHi .hi_shape_3 {
-  top: 4vh;
-  left: 2vw;
+  top: 24px; /* 4vh = 4% of 600px */
+  left: 16px; /* 2vw = 2% of 800px */
   animation: translat 10s infinite ease-in-out both;
 }
 @media (max-width: 899px) {
@@ -1791,8 +1785,8 @@ header section .hero-cube-2 .hero-picture-2 {
   }
 }
 .sayHi .hi_shape_4 {
-  top: 70vh;
-  left: 10vw;
+  top: 420px; /* 70vh = 70% of 600px */
+  left: 80px; /* 10vw = 10% of 800px */
   animation: shape_4 10s infinite ease-in-out both;
 }
 @media (max-width: 899px) {

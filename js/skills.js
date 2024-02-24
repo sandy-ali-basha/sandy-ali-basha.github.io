@@ -1,75 +1,57 @@
+// Store elements in an object
+var elements = {
+	recentWorkTitle: document.getElementById('recentWorkTitle'),
+	responsive_section_text: document.getElementById('responsive_section_text'),
+	headerText: document.getElementById('headerText'),
+	heyHeader: document.getElementById('heyHeader'),
+	Experience_title: document.getElementById('Experience_title'),
+	getInTouch_title: document.getElementById('getInTouch_title')
+};
 
-//-- -----------------------------
-var recentWorkTitle = document.getElementById('recentWorkTitle')
-Splitting({
-	target: recentWorkTitle,
-	by: 'chars'
-});
-var responsive_section_text = document.getElementById('responsive_section_text')
-Splitting({
-	target: responsive_section_text,
-	by: 'chars'
-});
-var headerText = document.getElementById('headerText')
-Splitting({
-	target: headerText,
-	by: 'chars'
+// Apply Splitting to each element
+Object.keys(elements).forEach(function (key) {
+	Splitting({ target: elements[key], by: 'chars' });
 });
 
-var heyHeader = document.getElementById('heyHeader')
-Splitting({
-	target: heyHeader,
-	by: 'chars'
-});
-
-var Experience_title = document.getElementById('Experience_title')
-Splitting({
-	target: Experience_title,
-	by: 'chars'
-});
-
-
-var Experience_title = document.getElementById('getInTouch_title')
-Splitting({
-	target: Experience_title,
-	by: 'chars'
-});
-
-
-const slideDown = (divId) => {
-	var scroll = $(window).scrollTop();
-	var targetOffset = $(`#${divId}`).offset().top - $(`#${divId}`).outerHeight();
-
-	if (scroll >= targetOffset) {
-		$(`#${divId}`).addClass('animation');
-	} else {
-		$(`#${divId}`).removeClass('animation');
-	}
+// Debounce function
+function debounce(func, wait) {
+	var timeout;
+	return function () {
+		clearTimeout(timeout);
+		timeout = setTimeout(func, wait);
+	};
 }
 
-$(window).scroll(function () {
-	slideDown('recentWorkTitle')
-	slideDown('responsive_section_text')
-	slideDown('heyHeader')
-	slideDown('Experience_title')
-	slideDown('getInTouch_title')
-});
+// Slide down function
+function slideDown() {
+	var scroll = $(window).scrollTop();
+	Object.keys(elements).forEach(function (key) {
+		var targetOffset = $(`#${key}`).offset().top - $(`#${key}`).outerHeight();
+		if (scroll >= targetOffset) {
+			$(`#${key}`).addClass('animation');
+		} else {
+			$(`#${key}`).removeClass('animation');
+		}
+	});
+}
 
-//-------------------------------------
+// Debounce scroll event
+$(window).scroll(debounce(slideDown, 100));
+
+// Document ready
 $(document).ready(function () {
 	$(".btn").hover(function () {
 		$(this).toggleClass("animate__animated");
 	});
 
-	//Preloader
-	preloaderFadeOutTime = 500;
+	// Preloader
+	var preloaderFadeOutTime = 500;
 	function hidePreloader() {
 		var preloader = $(".spinner-wrapper");
 		console.log("loader");
 		preloader.fadeOut(preloaderFadeOutTime);
 	}
 
-	hidePreloader()
-
-	slideDown('headerText')
+	hidePreloader();
+	slideDown();
 });
