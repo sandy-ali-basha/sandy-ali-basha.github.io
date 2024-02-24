@@ -1,3 +1,6 @@
+// Add will-change property to the elements you're going to animate
+document.querySelector('.imgToTop').style.willChange = 'transform';
+document.querySelector('.imgToBottom').style.willChange = 'transform';
 
 let imgToTop = gsap.timeline({
     scrollTrigger: {
@@ -23,7 +26,6 @@ let imgToBottom = gsap.timeline({
         scrub: 2,
         start: "center center",
         end: "top top",
-
         toggleActions: "resume pause resume pause",
     },
 });
