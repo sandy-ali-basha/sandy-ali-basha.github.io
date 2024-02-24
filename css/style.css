@@ -1755,7 +1755,7 @@ header section .hero-cube-2 .hero-picture-2 {
 }
 .sayHi .hi_shape_2 {
   top: 540px; /* 90vh = 90% of 600px */
-  left: 640px; /* 80vw = 80% of 800px */
+  left: 1030px; /* 80vw = 80% of 800px */
 }
 .sayHi .hi_shape_3 {
   top: 24px; /* 4vh = 4% of 600px */
