@@ -417,11 +417,9 @@
 
 .laptops {
   -moz-column-count: 2;
+       column-count: 2;
   -moz-column-gap: 0px;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 0px;
-  column-count: 2;
-  column-gap: 0px;
+       column-gap: 0px;
   width: 100vw;
   padding-top: 10vh;
 }
@@ -1039,7 +1037,7 @@ header section .hero-cube-2 .hero-picture-2 {
   border-radius: 44% 56% 27% 73%/53% 36% 64% 47%;
   transition: all 2s ease;
   animation: border 8s both infinite;
-  box-shadow: 0.7px 0.9px 8.1px rgba(0, 0, 0, 0.023), 1.8px 2.2px 12.2px rgba(0, 0, 0, 0.034), 3.3px 4px 16.2px rgba(0, 0, 0, 0.041), 5.1px 6.2px 20.8px rgba(0, 0, 0, 0.049), 7.6px 9.3px 26.6px rgba(0, 0, 0, 0.056), 11.2px 13.6px 34.9px rgba(0, 0, 0, 0.067), 19px 23px 54px rgba(0, 0, 0, 0.09);
+  box-shadow: 0.7px 0.9px 8.1px rgba(44, 44, 44, 0.023), 1.8px 2.2px 12.2px rgba(26, 26, 26, 0.034), 3.3px 4px 16.2px rgba(44, 44, 44, 0.041), 5.1px 6.2px 20.8px rgba(44, 44, 44, 0.049), 7.6px 9.3px 26.6px rgba(44, 44, 44, 0.056), 11.2px 13.6px 34.9px rgba(44, 44, 44, 0.067), 19px 23px 54px rgba(44, 44, 44, 0.09);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1052,7 +1050,7 @@ header section .hero-cube-2 .hero-picture-2 {
   }
 }
 .mywork .project:hover {
-  box-shadow: 0.7px 0.9px 8.1px rgba(0, 0, 0, 0.023), 1.8px 2.2px 12.2px rgba(0, 0, 0, 0.034), 3.3px 4px 16.2px rgba(0, 0, 0, 0.041), 5.1px 6.2px 20.8px rgba(0, 0, 0, 0.049), 7.6px 9.3px 26.6px rgba(0, 0, 0, 0.056), 11.2px 13.6px 34.9px rgba(0, 0, 0, 0.067), 19px 23px 54px rgba(0, 0, 0, 0.09);
+  box-shadow: 0.7px 0.9px 8.1px rgba(44, 44, 44, 0.023), 1.8px 2.2px 12.2px rgba(26, 26, 26, 0.034), 3.3px 4px 16.2px rgba(44, 44, 44, 0.041), 5.1px 6.2px 20.8px rgba(44, 44, 44, 0.049), 7.6px 9.3px 26.6px rgba(44, 44, 44, 0.056), 11.2px 13.6px 34.9px rgba(44, 44, 44, 0.067), 19px 23px 54px rgba(44, 44, 44, 0.09);
   transform: translateY(-30px);
 }
 @keyframes border {
@@ -1145,7 +1143,7 @@ header section .hero-cube-2 .hero-picture-2 {
   border-radius: 44% 56% 27% 73%/53% 36% 64% 47%;
   transition: all 2s ease;
   animation: brdr 8s both infinite;
-  box-shadow: 0.7px 0.9px 8.1px rgba(0, 0, 0, 0.023), 1.8px 2.2px 12.2px rgba(0, 0, 0, 0.034), 3.3px 4px 16.2px rgba(0, 0, 0, 0.041), 5.1px 6.2px 20.8px rgba(0, 0, 0, 0.049), 7.6px 9.3px 26.6px rgba(0, 0, 0, 0.056), 11.2px 13.6px 34.9px rgba(0, 0, 0, 0.067), 19px 23px 54px rgba(0, 0, 0, 0.09);
+  box-shadow: 0.7px 0.9px 8.1px rgba(44, 44, 44, 0.023), 1.8px 2.2px 12.2px rgba(26, 26, 26, 0.034), 3.3px 4px 16.2px rgba(44, 44, 44, 0.041), 5.1px 6.2px 20.8px rgba(44, 44, 44, 0.049), 7.6px 9.3px 26.6px rgba(44, 44, 44, 0.056), 11.2px 13.6px 34.9px rgba(44, 44, 44, 0.067), 19px 23px 54px rgba(44, 44, 44, 0.09);
 }
 @media (max-width: 899px) {
   .mywork .cv {
@@ -1158,7 +1156,7 @@ header section .hero-cube-2 .hero-picture-2 {
   color: #fff;
 }
 .mywork .cv:hover {
-  box-shadow: 0.7px 0.9px 8.1px rgba(0, 0, 0, 0.023), 1.8px 2.2px 12.2px rgba(0, 0, 0, 0.034), 3.3px 4px 16.2px rgba(0, 0, 0, 0.041), 5.1px 6.2px 20.8px rgba(0, 0, 0, 0.049), 7.6px 9.3px 26.6px rgba(0, 0, 0, 0.056), 11.2px 13.6px 34.9px rgba(0, 0, 0, 0.067), 19px 23px 54px rgba(0, 0, 0, 0.09);
+  box-shadow: 0.7px 0.9px 8.1px rgba(44, 44, 44, 0.023), 1.8px 2.2px 12.2px rgba(26, 26, 26, 0.034), 3.3px 4px 16.2px rgba(44, 44, 44, 0.041), 5.1px 6.2px 20.8px rgba(44, 44, 44, 0.049), 7.6px 9.3px 26.6px rgba(44, 44, 44, 0.056), 11.2px 13.6px 34.9px rgba(44, 44, 44, 0.067), 19px 23px 54px rgba(44, 44, 44, 0.09);
   transform: translateY(-30px);
 }
 @media (min-width: 451px) and (max-width: 900px) {
@@ -1466,13 +1464,12 @@ header section .hero-cube-2 .hero-picture-2 {
   left: 632px; /* 79vw = 79% of 800px */
   top: 576px; /* 96vh = 96% of 600px */
   width: 104px; /* 13vw = 13% of 800px */
-  z-index: 10;
+  z-index: -1;
   opacity: 0.7;
 }
 .experince .boxes {
   display: flex;
   padding: 0 10vw;
-  height: 100vh;
   align-items: center;
   justify-content: center;
 }
@@ -1483,12 +1480,12 @@ header section .hero-cube-2 .hero-picture-2 {
   }
 }
 .experince .boxes .degrees {
-  background-color: white;
-  box-shadow: 0.7px 0.9px 8.1px rgba(0, 0, 0, 0.023), 1.8px 2.2px 12.2px rgba(0, 0, 0, 0.034), 3.3px 4px 16.2px rgba(0, 0, 0, 0.041), 5.1px 6.2px 20.8px rgba(0, 0, 0, 0.049), 7.6px 9.3px 26.6px rgba(0, 0, 0, 0.056), 11.2px 13.6px 34.9px rgba(0, 0, 0, 0.067), 19px 23px 54px rgba(0, 0, 0, 0.09);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid white;
   margin: 2vw;
   padding: 2vw;
   min-height: 50%;
-  width: 35%;
+  width: 45%;
 }
 @media (max-width: 899px) {
   .experince .boxes .degrees {
@@ -1540,11 +1537,9 @@ header section .hero-cube-2 .hero-picture-2 {
 }
 .experince .boxes .jobs {
   background-color: white;
-  background-color: white;
   margin: 2vw;
-  box-shadow: 0.7px 0.9px 8.1px rgba(0, 0, 0, 0.023), 1.8px 2.2px 12.2px rgba(0, 0, 0, 0.034), 3.3px 4px 16.2px rgba(0, 0, 0, 0.041), 5.1px 6.2px 20.8px rgba(0, 0, 0, 0.049), 7.6px 9.3px 26.6px rgba(0, 0, 0, 0.056), 11.2px 13.6px 34.9px rgba(0, 0, 0, 0.067), 19px 23px 54px rgba(0, 0, 0, 0.09);
   padding: 2vw;
-  width: 35%;
+  width: 45%;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -1941,17 +1936,10 @@ header section .hero-cube-2 .hero-picture-2 {
   transition: all 0.3s;
   border-radius: 5px;
 }
-.experinceHover img {
-  transition: all 0.3s;
-  border-radius: 5px;
-}
-.experinceHover img:hover {
-  transform: scale(1.01);
-  border-radius: 20px;
-}
 .experinceHover:hover {
-  transform: scale(1.01);
-  border-radius: 25px;
+  transform: scale(1.009);
+  border-radius: 15px;
+  box-shadow: 0.7px 0.9px 8.1px rgba(44, 44, 44, 0.023), 1.8px 2.2px 12.2px rgba(26, 26, 26, 0.034), 3.3px 4px 16.2px rgba(44, 44, 44, 0.041), 5.1px 6.2px 20.8px rgba(44, 44, 44, 0.049), 7.6px 9.3px 26.6px rgba(44, 44, 44, 0.056), 11.2px 13.6px 34.9px rgba(44, 44, 44, 0.067), 19px 23px 54px rgba(44, 44, 44, 0.09);
 }
 
 .shadow {
@@ -2059,11 +2047,11 @@ header section .hero-cube-2 .hero-picture-2 {
     transform: translate3d(0, 0, 0) rotate(-5deg);
   }
 }
-.floatingItem {
+.float {
   animation: floating 9s ease-in infinite;
 }
 @media (max-width: 899px) {
-  .floatingItem {
+  .float {
     animation: none;
     transition: none;
   }
@@ -2093,4 +2081,40 @@ header section .hero-cube-2 .hero-picture-2 {
 #getInTouch_title .word,
 #Experience_title .word {
   overflow: hidden;
+}
+
+.footer-16371 {
+  padding: 7rem 0;
+}
+
+.footer-16371 .menu {
+  padding-bottom: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+.footer-16371 .menu a {
+  color: white;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+.footer-16371 .footer-site-logo {
+  padding-bottom: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.footer-16371 .footer-site-logo a {
+  color: white;
+  text-decoration: none;
+}
+.footer-16371 .social {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.footer-16371 .social .list-unstyled {
+  padding-top: 2rem;
+}
+.footer-16371 .social .list-unstyled a {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }/*# sourceMappingURL=style.css.map */

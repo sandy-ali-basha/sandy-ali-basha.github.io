@@ -964,13 +964,12 @@ header {
     left: 632px; /* 79vw = 79% of 800px */
     top: 576px; /* 96vh = 96% of 600px */
     width: 104px; /* 13vw = 13% of 800px */
-    z-index: 10;
+    z-index: -1;
     opacity: 0.7;
   }
   .boxes {
     display: flex;
     padding: 0 10vw;
-    height: 100vh;
     align-items: center;
     justify-content: center;
     @include media("<phone") {
@@ -978,12 +977,12 @@ header {
       height: initial;
     }
     .degrees {
-      background-color: white;
-      box-shadow: $boxShadow;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid white;
       margin: 2vw;
       padding: 2vw;
       min-height: 50%;
-      width: 35%;
+      width: 45%;
 
       @include media("<tablet") {
         margin: 1vw;
@@ -1028,11 +1027,9 @@ header {
     }
     .jobs {
       background-color: white;
-      background-color: white;
       margin: 2vw;
-      box-shadow: $boxShadow;
       padding: 2vw;
-      width: 35%;
+      width: 45%;
       height: fit-content;
       @include media("<phone") {
         width: 88%;
@@ -1398,21 +1395,13 @@ header {
   }
 }
 .experinceHover {
-  img {
-    transition: all 0.3s;
-    border-radius: 5px;
-
-    &:hover {
-      transform: scale(1.01);
-      border-radius: 20px;
-    }
-  }
   transition: all 0.3s;
   border-radius: 5px;
 
   &:hover {
-    transform: scale(1.01);
-    border-radius: 25px;
+    transform: scale(1.009);
+    border-radius: 15px;
+    box-shadow: $boxShadow;
   }
 }
 .shadow {
@@ -1534,7 +1523,10 @@ header {
     transform: translate3d(0, -0, 0) rotate(-5deg);
   }
 }
+//! do not delete
 .floatingItem {
+}
+.float {
   animation: floating 9s ease-in infinite;
 
   @include media("<tablet") {
@@ -1542,7 +1534,6 @@ header {
     transition: none;
   }
 }
-
 #recentWorkTitle,
 #responsive_section_text,
 #heyHeader,
@@ -1558,5 +1549,43 @@ header {
   }
   .word {
     overflow: hidden;
+  }
+}
+
+.footer-16371 {
+  padding: 7rem 0;
+}
+
+.footer-16371 {
+  .menu {
+    padding-bottom: 2rem;
+    justify-content: center;
+    text-align: center;
+    a {
+      color: white;
+      padding: 0 1rem;
+      text-decoration: none;
+    }
+  }
+  .footer-site-logo {
+    padding-bottom: 5rem;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .social {
+    text-align: center;
+    padding-bottom: 2rem;
+    .list-unstyled {
+      padding-top: 2rem;
+      a {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
   }
 }
