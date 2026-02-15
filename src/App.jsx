@@ -1,7 +1,7 @@
-import React, { useEffect } from 'https://esm.sh/react@18';
-import Splitting from 'https://esm.sh/splitting@1.1.0';
-import { gsap } from 'https://esm.sh/gsap@3.12.5';
-import { ScrollTrigger } from 'https://esm.sh/gsap@3.12.5/ScrollTrigger';
+import { useEffect } from 'react';
+import Splitting from 'splitting';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { portfolioMarkup } from './markup.js';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -103,5 +103,5 @@ export default function App() {
     };
   }, []);
 
-  return React.createElement('div', { dangerouslySetInnerHTML: { __html: portfolioMarkup } });
+  return <div dangerouslySetInnerHTML={{ __html: portfolioMarkup }} />;
 }
