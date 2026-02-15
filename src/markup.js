@@ -9,7 +9,7 @@ export const portfolioMarkup = `
   <header class="nav" id="Nav">
     <section>
       <nav>
-        <a target="blank" href="/">
+        <a href="/">
           <div class="logo">
             <div>SANDY</div>
           </div>
@@ -25,7 +25,7 @@ export const portfolioMarkup = `
         <div class="header-text" id="headerText">
           <h2 class="hiAnimation">Hi!</h2>
           <h6 style="color: #9933ff" translate="no">I'm Sandy</h6>
-          <h4>Front end developer</h4>
+          <h4>Front-End Developer | React.js & Next.js</h4>
         </div>
 
         <img class="div-animation" src="/img/avatar.png" loading="lazy" alt="avatar" />
@@ -42,12 +42,12 @@ export const portfolioMarkup = `
           loading="lazy" />
 
         <div class="header-contact-icons">
-          <a class="sotialLink" target="blank" href="https://www.instagram.com/sandyalibasha/"><img
+          <a class="sotialLink" target="_blank" href="https://www.instagram.com/sandyalibasha/"><img
               src="/img/instagram.svg" alt="shape" loading="lazy" />
           </a>
-          <a class="sotialLink" target="blank" href="https://www.facebook.com/sandy.alibasha"><img
+          <a class="sotialLink" target="_blank" href="https://www.facebook.com/sandy.alibasha"><img
               src="/img/facebook.svg" alt="shape" loading="lazy" /></a>
-          <a class="sotialLink" target="blank" href="https://www.linkedin.com/in/sandy-ali-basha/"><img
+          <a class="sotialLink" target="_blank" href="https://www.linkedin.com/in/sandy-ali-basha/"><img
               src="/img/linkedin.svg" alt="shape" loading="lazy" /></a>
         </div>
       </div>
@@ -63,124 +63,122 @@ export const portfolioMarkup = `
         <img src="/img/heyAvatar.png" alt="portfolio img" class="float cvImg" loading="lazy" />
       </div>
       <div class="txt">
-        <h1 class="heyHeader" id="heyHeader">Hey.</h1>
+        <h1 class="heyHeader" id="heyHeader">Sandy Ali Basha</h1>
         <p id="text">
-          With years of hands-on experience in JavaScript, and SCSS, I've
-          honed my skills in both vanilla JavaScript and popular frameworks
-          like React and Vue.
-          <span class="light_blue">UI design is another feather in my cap,</span>
-          and I've leveraged SCSS to craft maintainable, scalable CSS.
-          <br />
-          <br />
-          My commitment to writing clean, maintainable code is unwavering, and
-          my journey to learn and refine my skills is ongoing. I'm excited to
-          bring my expertise to new challenges and opportunities.
+          As a Front-End Developer since 2021, I build interactive and visually appealing web experiences
+          using React.js, Next.js, and modern CSS systems.
+          <span class="light_blue">My UI/UX background helps me deliver interfaces that are both beautiful and usable.</span>
+          I enjoy collaborating with designers, backend engineers, and clients to turn ideas into fast,
+          reliable products that solve real business needs.
         </p>
         <button class="zar link">
-          <a target="blank" href="/sandy's Resume.pdf">Take a look at my CV</a>
+          <a target="_blank" href="/sandy's Resume.pdf">Take a look at my CV</a>
         </button>
       </div>
     </section>
     <!-- skills end -->
     <section class="experince">
-      <img class="experince_shape shape_1 floatingItem " src="/img/shapes/t (10).webp" alt="portfolio img"
+      <img class="experince_shape shape_1 floatingItem " src="/img/shapes/t (10).webp" alt="decorative shape"
         loading="lazy" />
 
-      <img class="experince_shape shape_2 floatingItem" src="/img/shapes/t (2).webp" alt="portfolio img"
+      <img class="experince_shape shape_2 floatingItem" src="/img/shapes/t (2).webp" alt="decorative shape"
         loading="lazy" />
 
-      <h1 class="recentWork__title" id="Experience_title">My Experience</h1>
+      <h2 class="recentWork__title" id="Experience_title">Experience</h2>
 
       <div class="boxes">
         <div class="degrees experinceHover">
           <div class="element">
             <h5 class="element-title">
-              <img src="/img/graduation-cap.svg" alt="graduation-cap" loading="lazy" />
-              <span>2018 - 2021</span>
+              <img src="/img/graduation-cap.svg" alt="graduation cap" loading="lazy" />
+              <span>2025 – Present</span>
             </h5>
             <div class="border">
-              <h4>diploma Degree</h4>
-              <p>Technical Computer Colleges</p>
+              <h4>Bachelor of Software Engineering (BAIT)</h4>
+              <p>Syrian Virtual University (Expected Graduation: Dec 2027)</p>
             </div>
           </div>
           <div class="element">
             <h5 class="element-title">
-              <img src="/img/graduation-cap.svg" alt="icon" loading="lazy" />
-              <span>June 2023</span>
+              <img src="/img/graduation-cap.svg" alt="graduation cap" loading="lazy" />
+              <span>2022</span>
+            </h5>
+            <div class="border">
+              <h4>Computer Engineering Diploma</h4>
+              <p>Technical Computer College, Damascus</p>
+            </div>
+          </div>
+          <div class="element">
+            <h5 class="element-title">
+              <img src="/img/certificate.svg" alt="certificate icon" loading="lazy" />
+              <span>06/2023</span>
             </h5>
             <div class="border">
               <h4>Meta Front-End Developer</h4>
-              <p>
-                <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/GL7GAZ92DPSF">Meta
-                  at Coursera</a>
-              </p>
-            </div>
-          </div>
-          <div class="element">
-            <h5 class="element-title">
-              <img src="/img/certificate.svg" alt="icon" loading="lazy" />
-              <span>June 2023</span>
-            </h5>
-            <div class="border">
-              <h4>EDUCBA</h4>
-              <p>build responsive website using HTML / CSS / Bootstrap</p>
+              <p><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/GL7GAZ92DPSF" target="_blank" rel="noopener noreferrer">Coursera Certificate</a></p>
             </div>
           </div>
         </div>
         <div class="jobs experinceHover">
           <div class="element">
             <h5 class="element-title">
-              <img src="/img/portfolio (1).svg" loading="lazy" />
-              <span>08/2023 - 3/2024</span>
+              <img src="/img/portfolio (1).svg" alt="work icon" loading="lazy" />
+              <span>04/2024 - Present</span>
             </h5>
             <div class="border">
-              <h4>CO-FOUNDER & CREATIVE TECHNOLOGIST</h4>
-              <p>
-                <a href="https://xyz-dev.vercel.app/" target="_blank" rel="noopener noreferrer">XYZ</a>
-              </p>
-              <small class="text-secondary">A creative tech team specialized in building modern websites, co-founded and
-                led the front-end and
-                design efforts, delivering interactive, mobile-friendly web solutions and engaging visual content that
-                aligns with clients’ brand identity and business goals.
-              </small>
-            </div>
-
-          </div>
-          <div class="element">
-            <h5 class="element-title">
-              <img src="/img/portfolio (1).svg" loading="lazy" />
-              <span>08/2023 - 3/2024</span>
-            </h5>
-            <div class="border">
-              <h4>Front-end developer</h4>
-              <p>
-                <a href="https://marks.sa/" target="_blank" rel="noopener noreferrer">Marks</a>
-              </p>
+              <h4>Co-Founder & Lead Frontend Engineer</h4>
+              <p><a href="https://xyz-dev.vercel.app/" target="_blank" rel="noopener noreferrer">XYZ</a></p>
+              <small class="text-secondary">Leading frontend architecture, reusable UI systems, and high-performance delivery for client projects.</small>
             </div>
           </div>
           <div class="element">
             <h5 class="element-title">
-              <img src="/img/portfolio (1).svg" loading="lazy" />
-              <span>1/2023 - 6/2023</span>
+              <img src="/img/portfolio (1).svg" alt="work icon" loading="lazy" />
+              <span>10/2023 - 03/2024</span>
             </h5>
             <div class="border">
-              <h4>Front-end developer</h4>
-              <p>
-                <a href="https://quantumgate.io/" target="_blank" rel="noopener noreferrer">Quantum Gate</a>
-              </p>
+              <h4>Freelance Front-End Developer</h4>
+              <p><a href="https://ebhar-marks.vercel.app" target="_blank" rel="noopener noreferrer">MARKS</a></p>
             </div>
           </div>
           <div class="element">
             <h5 class="element-title">
-              <img src="/img/portfolio (1).svg" loading="lazy" />
-              <span>7/2022 - 12/2022</span>
+              <img src="/img/portfolio (1).svg" alt="work icon" loading="lazy" />
+              <span>06/2023 - 10/2023</span>
             </h5>
             <div class="border">
-              <h4>Front-end developer</h4>
-              <p>
-                <a href="https://www.facebook.com/qtech.group.co" target="_blank" rel="noopener noreferrer">Qtech
-                  technology</a>
-              </p>
+              <h4>Front-End Developer</h4>
+              <p><a href="https://azalea.r-link.io/" target="_blank" rel="noopener noreferrer">R-Link</a></p>
+            </div>
+          </div>
+          <div class="element">
+            <h5 class="element-title">
+              <img src="/img/portfolio (1).svg" alt="work icon" loading="lazy" />
+              <span>12/2022 - 05/2023</span>
+            </h5>
+            <div class="border">
+              <h4>Freelance Front-End Developer</h4>
+              <p>Brain Socket — <a href="https://www.mwallet.com" target="_blank" rel="noopener noreferrer">Mwallet</a> / <a href="https://www.akarkom.com" target="_blank" rel="noopener noreferrer">AkarKom</a></p>
+            </div>
+          </div>
+          <div class="element">
+            <h5 class="element-title">
+              <img src="/img/portfolio (1).svg" alt="work icon" loading="lazy" />
+              <span>04/2022 - 12/2022</span>
+            </h5>
+            <div class="border">
+              <h4>Freelance Front-End Developer</h4>
+              <p><a href="https://www.facebook.com/qtech.group.co" target="_blank" rel="noopener noreferrer">QTech Group</a></p>
+            </div>
+          </div>
+          <div class="element">
+            <h5 class="element-title">
+              <img src="/img/portfolio (1).svg" alt="work icon" loading="lazy" />
+              <span>03/2021 - 03/2022</span>
+            </h5>
+            <div class="border">
+              <h4>Front-End Developer</h4>
+              <p>ALDR-TECH</p>
             </div>
           </div>
         </div>
@@ -189,9 +187,9 @@ export const portfolioMarkup = `
     <!-- experince end -->
     <section class="recentWork" id="myWork">
       <div class="container">
-        <h1 class="recentWork__title rec_title" id="recentWorkTitle">
+        <h2 class="recentWork__title rec_title" id="recentWorkTitle">
           I design and code captivating web apps with integrated dashboards.
-        </h1>
+        </h2>
         <img src="/img/Macbook.png" class="Macbook" alt="portfolio img" loading="lazy" />
       </div>
     </section>
@@ -284,20 +282,55 @@ export const portfolioMarkup = `
         </div>
       </div>
     </section>
+
+    <section class="skills" id="skills">
+      <h2 class="recentWork__title">Skills & Certificates</h2>
+      <div class="container">
+        <div class="boxes">
+          <div class="degrees experinceHover">
+            <div class="element">
+              <div class="border">
+                <h4>Frameworks & Libraries</h4>
+                <p>React.js, Next.js, Vue.js, Angular, Three.js</p>
+              </div>
+            </div>
+            <div class="element">
+              <div class="border">
+                <h4>State Management</h4>
+                <p>Redux, React Query, Zustand</p>
+              </div>
+            </div>
+            <div class="element">
+              <div class="border">
+                <h4>UI & Tools</h4>
+                <p>MUI, Tailwind CSS, Bootstrap, GSAP, Figma, Adobe XD, Git, FlutterFlow</p>
+              </div>
+            </div>
+          </div>
+          <div class="jobs experinceHover">
+            <div class="element"><div class="border"><h4>Meta Front-End Developer</h4><p>06/2023</p></div></div>
+            <div class="element"><div class="border"><h4>Introduction to Front-end Development with ReactJS</h4><p>Coursera — 06/2022</p></div></div>
+            <div class="element"><div class="border"><h4>Programming with JavaScript</h4><p>Coursera — 12/2022</p></div></div>
+            <div class="element"><div class="border"><h4>Modern JavaScript for React JS - ES6</h4><p>Udemy — 05/2021</p></div></div>
+            <div class="element"><div class="border"><h4>Build Responsive Website using HTML/CSS/Bootstrap</h4><p>EDUCBA — 04/2021</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="sayHi" id="sayHi">
       <img class="hi_shape hi_shape_1" src="/img/shapes/t (9).webp" alt="portfolio img" />
       <img class="hi_shape hi_shape_2" src="/img/shapes/t (1).webp" alt="portfolio img" />
       <img class="hi_shape hi_shape_3" src="/img/shapes/t (16).webp" alt="portfolio img" />
 
-      <h1 class="recentWork__title getInTouch_title" id="getInTouch_title">
+      <h2 class="recentWork__title getInTouch_title" id="getInTouch_title">
         Get In Touch
-      </h1>
+      </h2>
       <div class="container">
         <div class="text">
           <h3>Let's talk about everything!</h3>
           <p>
             Dont like forms? Send me an
-            <a target="blank" href="mailto:sandy.ali.basha@gmail.com">email</a>
+            <a target="_blank" href="mailto:sandy.ali.basha@gmail.com">email</a>
           </p>
         </div>
         <form class="form" method="post" action="mailer.php">
@@ -331,22 +364,22 @@ export const portfolioMarkup = `
           <div class="social mb-4">
             <h3>Stay in touch</h3>
             <ul class="list-unstyled">
-              <a class="sotialLink" target="blank" href="https://www.instagram.com/sandyalibasha/"><img
+              <a class="sotialLink" target="_blank" href="https://www.instagram.com/sandyalibasha/"><img
                   src="/img/instagram.svg" alt="shape" loading="lazy" />
               </a>
-              <a class="sotialLink" target="blank" href="https://www.facebook.com/sandy.alibasha"><img
+              <a class="sotialLink" target="_blank" href="https://www.facebook.com/sandy.alibasha"><img
                   src="/img/facebook.svg" alt="shape" loading="lazy" /></a>
-              <a class="sotialLink" target="blank" href="https://www.linkedin.com/in/sandy-ali-basha/"><img
+              <a class="sotialLink" target="_blank" href="https://www.linkedin.com/in/sandy-ali-basha/"><img
                   src="/img/linkedin.svg" alt="shape" loading="lazy" /></a>
 
             </ul>
             <ul class="list-unstyled">
-              <a class="sotialLink" target="blank" href="https://wa.me/+201080749941"> +20 1080 7499 41
+              <a class="sotialLink" target="_blank" href="tel:+963945377389"> +963 945 377 389
               </a>
-              <a class="sotialLink" target="blank" href="https://wa.me/+963945377389"> +963 945 3773 89
+              <a class="sotialLink" target="_blank" href="https://wa.me/+963945377389"> +963 945 3773 89
               </a>
-              <a class="sotialLink" target="blank"
-                href="https://www.facebook.com/sandy.alibasha">sandy.ali.basha@gmail.com</a>
+              <a class="sotialLink" target="_blank"
+                href="mailto:sandy.ali.basha@gmail.com">sandy.ali.basha@gmail.com</a>
 
             </ul>
           </div>
